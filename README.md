@@ -1,4 +1,4 @@
-# CS328Project: UT Austin Guide for Students
+# CS329Project: UT Austin Guide for Students
 
 #### Requirements
 -Title\
