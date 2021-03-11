@@ -26,7 +26,7 @@ body, #container, #top {
         position: absolute;
         bottom: 0.3vw;
         left: 1vw;
-        font-size:2vw;
+        font-size: 2vw;
 }
 
 #top #logo_set #phrase {
@@ -71,6 +71,13 @@ body, #container, #top {
 	background-color: inherit;
 	margin: 0;
 	padding: 16px;
+}
+
+button {
+        background-color: inherit;
+        border: none;
+        outline: none;
+        font-size: inherit;
 }
 
 #menu a:hover, .dropdown:hover .dropbutton {
