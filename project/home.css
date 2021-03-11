@@ -117,6 +117,39 @@ button {
 	margin: 2vw 15vw 5vw 10vw;	
 }
 
+#intro{
+	text-align: left;
+	font-size: 120%;
+	padding: 0px;
+}
+
+.bigPic{
+	border-right: 20px solid transparent;
+	border-left: 20px solid transparent;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	text-align: center;
+}
+
+.smallPic{
+	width: 350px;
+	height: 350px;
+	border-right: 50px solid transparent;
+	border-left: 50px solid transparent;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	float: right;
+	margin: auto;
+	text-align: center;
+}
+
+div[class = "text"] {
+	padding: 10px;
+	text-align: center;
+	margin: auto;
+}
+
 #footer {
+	clear: both;
 	text-align: center;
 }
