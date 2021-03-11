@@ -10,4 +10,5 @@
 \
 ** working homepage: Leave placeholders for your graphics, forms, access to database for the interior pages.
 \
-![directiory setup accross all our serves](https://github.com/kimmisin/CS329Project/blob/main/directory_setup.png)
+\
+<All items will be in the project folder with no subfolders for the sake of not using specific URLs>
