@@ -1,6 +1,6 @@
 # CS329Project: UT Austin Guide for Students
 
-#### Phase 4 Requirements
+#### [Phase 4 Requirements] (https://www.cs.utexas.edu/~bulko/2021spring/329E.Project.Phase4.html)
 -The interior pages should have a title and a logo, which should be a link to the home page.\
 -The content should be presented in short paragraphs and/or bulleted sentences.\
 -The main navigation bar should be consistent across all pages. You may place a non-working link for the current page in the navigation bar.\
