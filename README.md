@@ -1,15 +1,14 @@
 # CS329Project: UT Austin Guide for Students
 
-#### Requirements
--Title\
--Unique logo for your website\
--Brief description of what the website is about\
--Navigation bar to the other content areas\
--A Contact Us page with a small blurb about you and your contact information. Summarize your credentials (note that this should not be a resume!) so that it establishes a measure of credibility regarding the website.\
--The date and your signature.\
+#### Phase 4 Requirements
+-The interior pages should have a title and a logo, which should be a link to the home page.\
+-The content should be presented in short paragraphs and/or bulleted sentences.\
+-The main navigation bar should be consistent across all pages. You may place a non-working link for the current page in the navigation bar.\
+-You can have links to other content areas. If you do not have the content ready these links should point to a single blank page.\
 \
-working homepage:\
-Leave placeholders for your graphics, forms, access to database for the interior pages.
+At this phase, the majority of the main textual content and images should be there. Your interior pages should have all the content of your website, but perhaps only in abridged form. You should have working links from these pages to other content areas.\
+\
+You must have at least two JavaScript applications. One could be some type of form validation; the second should be a DHTML application. I also encourage you to use jQuery somewhere in your applications.\
 \
 \
 **All items will be in the project folder with no subfolders for the sake of not using specific URLs
