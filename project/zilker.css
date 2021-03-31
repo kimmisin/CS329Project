@@ -133,6 +133,11 @@ button {
 	text-align: center;
 }
 
+.smallPic:hover{
+	cursor: pointer;
+	border: 10px solid black;
+}
+
 img {
 	margin: auto;
 }
