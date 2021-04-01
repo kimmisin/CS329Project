@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
-	<title> Project Starter </title>
+	<title> Mayfield Park </title>
 	<meta charset = "UTF-8">
 	<meta name = "description" content = "UT Austin Guide">
-	<meta name = "author" content = "Kimmi Sin">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- change the css to your renamed starter.css -->
-	<link href = "starter.css" rel = "stylesheet">
+	<meta name = "author" content = "Braden Wu">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href = "mayfield.css" rel = "stylesheet">
+	<script src = "mayfield.js" defer> </script>
 </head>
 
 <body>
@@ -54,15 +54,35 @@
 		</div>
 
 		<div id = "content">
-			<!-- keep h1 tag and update the content in the tag-->
-			<h1> Mayfield Park and Preserve </h1>
-			<p> 
-				Location photos and information
-			</p>
+			<h1> Mayfield Park and Nature Preserve </h1>
+			<div class = "bigPic">
+				<img src = "mayfield1.jpg" id = "big" height = "400" width = "700">
+			</div>
+			<div class = "smallPic">
+				<img src = "mayfield2.jpg" id = "small1" height = "100" width = "150" onclick = "changeImage(event)">
+			</div>
+			<div class = "smallPic">
+				<img src = "mayfield3.jpg" id = "small2" height = "100" width = "150" onclick = "changeImage(event)">
+			</div>
+			<div class = "smallPic">
+				<img src = "mayfield4.jpg" id = "small3" height = "100" width = "150" onclick = "changeImage(event)">
+			</div>
+			<div class = "text">
+				<p> <strong> Location: </strong> <a href = "https://www.google.com/maps/place/Mayfield+Park+and+Nature+Preserve/@30.3124673,-97.7727925,17z/data=!3m1!4b1!4m5!3m4!1s0x8644cabbb73d7e23:0xe94c125ee31f1d00!8m2!3d30.3124627!4d-97.7706038"> 3505 W 35th St, Austin, TX 78703 </a> </p> 
+				<p> </p>
+				<p> <strong> What is it?: </strong> Formerly a private residence, Mayfield Park is now a historic park, nature preserve, and hiking trail. Be prepared to witness beautiful gardens and peacocks as your stroll through..</p>
+				<p> </p>
+				<p> <strong> Things to do: </strong> Hiking, Nature, Walk with friends</p>
+				<p> </p>
+				<p> <strong> Our Rating: </strong> Must Do! </p>
+				<p> </p>
+				<p> <strong> Tags: </strong> Outdoors</p>
+
+			</div>
 		</div>
 
 		<div id = "footer">
-			Kimmi Sin | Last Updated: 03/10/2021
+			Braden Wu | Last Updated: 03/31/2021
 		</div>
 	</div>
 
