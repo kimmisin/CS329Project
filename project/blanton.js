@@ -1,4 +1,4 @@
-big = "mayfield1.jpg";
+big = "blanton1.jpg";
 
 function changeImage(event){
 	currentBig = document.getElementById("big").src;
