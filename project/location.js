@@ -1,6 +1,10 @@
-big = "mckinney1.jpg";
+var big;
 
-function changeImage(event){
+window.onload = function() {
+	big = document.getElementById("big").src;
+}
+
+function changeImage(event) {
 	currentBig = document.getElementById("big").src;
 	big = currentBig;
 	currentImage = document.getElementById(event.currentTarget.id).src;
