@@ -158,28 +158,24 @@ button {
 
 #content p {
         margin: 0;
-        padding: 0 0 1.5vw 0;
+        padding: 1.5vw 0 0 0;
 }
 
 .form_item {
 	display: block;
-	padding: 0 0 1vw 0;
+	padding: 1vw 0 0 0;
 }
 
-.form_item .radio {
+.form_item .checkbox {
 	display: block;
 }
 p label {
 	display: block;
 }
 
-#textarea {
+textarea {
 	width: 40vw;
 	height: 10vw;
-}
-textarea {
-	width: 100%;
-	height: 100%;
 }
 
 #footer {

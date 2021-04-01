@@ -7,6 +7,8 @@
 	<meta name = "author" content = "Kimmi Sin">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href = "suggestions.css" rel = "stylesheet">
+	<script src="jquery-3.6.0.js"></script>
+	<script src="suggestions.js"></script>
 </head>
 
 <body>
@@ -56,9 +58,9 @@
 			<form method = "POST" action = ''>
 				Subcribe for website updates:
 				<div id = "email_textarea">
-					<textarea name = "email"> Enter email </textarea>
+					<input name ="email" type="text" placeholder="JaneDoe@gmail.com">
 				</div>
-				<input type = "submit" value = "Submit">
+				<input id="email" type = "submit" value = "Submit">
 			</form>
 		</div>
 
@@ -73,8 +75,9 @@
 				<label> 
 					Are you affiliated with UT Austin?
 				</label>
-				<select name = "affiliation">
-					<option selected = "selected"> Faculty </option>
+				<select id = "affiliation">
+					<option selected = "selected"></option>
+						<option> Faculty </option>
 						<option> Student </option>
 						<option> Prospective Student </option>
 						<option> Not Affiliated </option>
@@ -87,8 +90,9 @@
 				<label>
 					What is your experience with Austin?
 				</label>
-				<select name = "experience">
-					<option selected = "selected"> Austin Resident </option>
+				<select id = "experience">
+					<option selected = "selected"></option>
+						<option> Austin Resident </option>
 						<option> Visited a few times </option>
 						<option> Never Visited </option>
 				</select>
@@ -99,13 +103,13 @@
 				<label>
 					Indicate which of the following activity types you are interested in our site displaying more locations of.
 				</label>
-				<div id = "radio">
-				<input name = "interest" type = "radio" value = "Outdoor"><label> Outdoor Activities </label>
-				<input name = "interest" type = "radio" value = "Indoor"><label> Indoor Activities </label>
-				<input name = "interest" type = "radio" value = "Entertainment"><label> Entertainment </label>
-				<input name = "interest" type = "radio" value = "Study"><label> Study Spots </label>
-				<input name = "interest" type = "radio" value = "Dining"><label> Dining </label>
-				<input name = "interest" type = "radio" value = "Sports"><label> Sports </label>
+				<div id = "checkbox">
+				<input name = "interest" type = "checkbox" value = "Outdoor"><label> Outdoor Activities </label>
+				<input name = "interest" type = "checkbox" value = "Indoor"><label> Indoor Activities </label>
+				<input name = "interest" type = "checkbox" value = "Entertainment"><label> Entertainment </label>
+				<input name = "interest" type = "checkbox" value = "Study"><label> Study Spots </label>
+				<input name = "interest" type = "checkbox" value = "Dining"><label> Dining </label>
+				<input name = "interest" type = "checkbox" value = "Sports"><label> Sports </label>
 				</div>
 				</div>
 
@@ -113,17 +117,17 @@
 				<p>
 					<label>If you have location recommendations, a suggestion for a new activity type, or any comments about the website and its functionalities, please enter them below.</label>
 					<div id = "textarea">	
-						<textarea name = "comments"> Type your input here. </textarea>
+						<textarea name = "comments" placeholder="Type your input here."></textarea>
 					</div>
 				</p>
 				<input type = "reset" value = "Clear">
-				<input type = "submit" value = "Submit">
+				<input id="surveyForm" type = "submit" value = "Submit">
 				
 			</form>
 		</div>
 
 		<div id = "footer">
-			Kimmi Sin | Last Updated: 03/09/2021
+			Kimmi Sin | Last Updated: 03/31/2021
 		</div>
 	</div>
 
