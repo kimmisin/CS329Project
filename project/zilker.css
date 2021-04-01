@@ -57,6 +57,23 @@ body, #container, #top {
 	text-decoration: none;
 }
 
+#searchbar {
+	float:right; 
+	flex-shrink:1; 
+	margin-top: 1%; 
+	width: 20%; 
+	height: 80%;
+}
+
+#searchbox {
+	width:80%;
+	font-size: 1.3vw;
+}
+
+#searchbar button:hover {
+	background-color: orangered;
+}
+
 .dropdown {
 	float: left;
 	overflow: hidden;

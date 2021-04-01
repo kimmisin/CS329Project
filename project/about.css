@@ -89,8 +89,25 @@ button {
         font-size: inherit;
 }
 
-#menu a:hover, .dropdown:hover .dropbutton {
+#menu a:hover, .dropdown:hover .dropbutton{
 	background-color: coral;
+}
+
+#searchbar {
+	float:right; 
+	flex-shrink:1; 
+	margin-top: 1%; 
+	width: 20%; 
+	height: 80%;
+}
+
+#searchbox {
+	width:80%;
+	font-size: 1.3vw;
+}
+
+#searchbar button:hover {
+	background-color: orangered;
 }
 
 .activitycontent {
