@@ -7,11 +7,11 @@
         <meta name = "author" content = "Brinnah Welmaker">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href = "about.css" rel = "stylesheet">
+        <script src="searchBar.js"></script>
 </head>
 
 <body>
         <div id = "container">
-
                 <!-- includes: logo, banner -->
                 <div id = "top">
                         <div id = "logo_set">
@@ -45,10 +45,10 @@
                         <a href = "resources.html">Resources</a>
                         <a href = "suggestions.html">Suggestions</a>
                         <div id="searchbar">
-                                <form action="search.php">
-                                        <input type="text" placeholder="search" id="searchbox">
-                                        <button type="submit"><i class="fa fa-search"></i></button>
-                                </form> 
+                        	<button id="searchButton" onclick="expandSearchBar();"><i id="icon" class="fa fa-search"></i></button>
+                            <form id="searchForm" method="POST" action="search.php">
+                            	<input id="searchbox" type="text" placeholder="search" >
+                            </form>
                         </div>
                 </div>
 

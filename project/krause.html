@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
-	<title> Krause Springs </title>
+	<title> Project Starter </title>
 	<meta charset = "UTF-8">
 	<meta name = "description" content = "UT Austin Guide">
-	<meta name = "author" content = "Braden Wu">
-    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href = "location.css" rel = "stylesheet">
-	<script src = "location.js" defer> </script>
+	<meta name = "author" content = "Kimmi Sin">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- change the css to your renamed starter.css -->
+	<link href = "starter.css" rel = "stylesheet">
+	<script src="searchBar.js"></script>
 </head>
 
 <body>
 	<div id = "container">
-
-		
 		<!-- includes: logo, banner -->
-                <div id = "top">
+		<div id = "top">
 			<div id = "logo_set">
                                 <a href = "home.html" style="text-decoration:none; color:inherit;">
                                         <img id = "logo" src = "logo.png" alt = "UTag Logo">
@@ -23,8 +22,8 @@
                                         <p id = "phrase">University of Texas at Austin Guide</p>
                                 </a>
                         </div>
-               		<img id = "banner" src = "activities.jpg" alt = "UT Campus Image">
-                </div>
+			<img id = "banner" src = "activities.jpg" alt = "UT Campus Image">
+		</div>
 
 		<div id = "menu">		
 			<a href = "home.html">Home</a>
@@ -47,41 +46,19 @@
 			<a href = "resources.html">Resources</a>
 			<a href = "suggestions.html">Suggestions</a>
 			<div id="searchbar">
-                <form action="search.php">
-                	<input type="text" placeholder="search" id="searchbox">
-                	<button type="submit"><i class="fa fa-search"></i></button>
+            	<button id="searchButton" onclick="expandSearchBar();"><i id="icon" class="fa fa-search"></i></button>
+                <form id="searchForm" method="POST" action="search.php">
+                    <input id="searchbox" type="text" placeholder="search" >
                 </form>
             </div>
 		</div>
 
-		<form>
-
 		<div id = "content">
+			<!-- keep h1 tag and update the content in the tag-->
 			<h1> Krause Springs </h1>
-			<div class = "bigPic">
-				<img src = "krause1.jpg" id = "big" height = "400" width = "700">
-			</div>
-			<div class = "smallPic">
-				<img src = "krause2.jpg" id = "small1" height = "100" width = "150" onclick = "changeImage(event)">
-			</div>
-			<div class = "smallPic">
-				<img src = "krause3.jpg" id = "small2" height = "100" width = "150" onclick = "changeImage(event)">
-			</div>
-			<div class = "smallPic">
-				<img src = "krause4.jpg" id = "small3" height = "100" width = "150" onclick = "changeImage(event)">
-			</div>
-			<div class = "text">
-				<p> <strong> Location: </strong> <a href = "https://www.google.com/maps/place/Krause+Springs/@30.4776822,-98.1538487,17z/data=!4m8!1m2!2m1!1skrause+springs!3m4!1s0x865b3cef95c752a7:0xabfd1911c3fac737!8m2!3d30.4776822!4d-98.15166"> 424 Co Rd 404, Spicewood, TX 78669 </a> </p> 
-				<p> </p>
-				<p> <strong> What is it?: </strong> Krause Springs is a popular camping site hosting 32 man-made hot springs. You'll have a great time relaxing in the hot springs and the river!.</p>
-				<p> </p>
-				<p> <strong> Things to do: </strong> Camping, Swimming, Hot Springs </p>
-				<p> </p>
-				<p> <strong> Our Rating: </strong> We Recommend! </p>
-				<p> </p>
-				<p> <strong> Tags: </strong> Outdoors</p>
-
-			</div>
+			<p> 
+				Location photos and information
+			</p>
 		</div>
 
 		<div id = "footer">
