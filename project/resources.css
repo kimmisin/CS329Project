@@ -1,39 +1,39 @@
 body, #container, #top {
-	padding: 0;
-	margin: 0;
-	font-family: "Times New Roman", Times, serif;
-	font-size: 1.2vw;
+        padding: 0;
+        margin: 0;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 1.2vw;
 }
 
 #top #logo_set {
-	float: left;
-	width: 30%;
-	height: 15vw;
-	position: relative;
+        float: left;
+        width: 30%;
+        height: 15vw;
+        position: relative;
 }
 
 #top #logo_set #logo {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
 }
 
 #top #logo_set p {
-	font-weight: bold;
+        font-weight: bold;
 }
 
 #top #logo_set #utag{
-	position: absolute;
-	bottom: 0.3vw;
-	left: 1vw;
-	font-size: 2vw;
+        position: absolute;
+        bottom: 0.3vw;
+        left: 1vw;
+        font-size: 2vw;
 }
 
 #top #logo_set #phrase {
-	position: absolute;
-	bottom: -1.1vw;
-	left: 1vw;
-	font-size: 1.5vw;
+        position: absolute;
+        bottom: -1.1vw;
+        left: 1vw;
+        font-size: 1.5vw;
 }
 
 #top #banner {
@@ -53,30 +53,21 @@ body, #container, #top {
 	font-size: 1.3vw;
 	color: black;
 	text-align: center;
-	padding: 18px;
+	padding: 16px;
 	text-decoration: none;
 }
 
 #searchbar {
-	display: inline-block;
-	flex-shrink: 1; 
-	width: 23%; 
+	float:right; 
+	flex-shrink:1; 
+	margin-top: 1%; 
+	width: 20%; 
 	height: 80%;
 }
 
-#searchForm {
-	display: inline-block;
-}
-
 #searchbox {
+	width:80%;
 	font-size: 1.3vw;
-	width: 0%;
-	visibility: hidden;
-}
-
-#searchbar button {
-	font-size: 1.6vw;
-	padding: 15px;
 }
 
 #searchbar button:hover {
@@ -107,7 +98,7 @@ button {
 }
 
 #menu a:hover, .dropdown:hover .dropbutton {
-	background-color: orangered;
+	background-color: coral;
 }
 
 .activitycontent {

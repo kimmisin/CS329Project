@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
-	<title> Project Starter </title>
+	<title> McKinney Falls State Park </title>
 	<meta charset = "UTF-8">
 	<meta name = "description" content = "UT Austin Guide">
-	<meta name = "author" content = "Kimmi Sin">
+	<meta name = "author" content = "Braden Wu">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- change the css to your renamed starter.css -->
-	<link href = "starter.css" rel = "stylesheet">
-	<script src="searchBar.js"></script>
+	<link href = "mckinney.css" rel = "stylesheet">
+	<script src = "mckinney.js" defer> </script>
 </head>
 
 <body>
 	<div id = "container">
+
 		<!-- includes: logo, banner -->
 		<div id = "top">
 			<div id = "logo_set">
@@ -46,23 +46,43 @@
 			<a href = "resources.html">Resources</a>
 			<a href = "suggestions.html">Suggestions</a>
 			<div id="searchbar">
-            	<button id="searchButton" onclick="expandSearchBar();"><i id="icon" class="fa fa-search"></i></button>
-                <form id="searchForm" method="POST" action="search.php">
-                    <input id="searchbox" type="text" placeholder="search" >
+                <form action="search.php">
+                	<input type="text" placeholder="search" id="searchbox">
+                	<button type="submit"><i class="fa fa-search"></i></button>
                 </form>
             </div>
 		</div>
 
 		<div id = "content">
-			<!-- keep h1 tag and update the content in the tag-->
 			<h1> McKinney Falls State Park </h1>
-			<p> 
-				Location photos and information
-			</p>
+			<div class = "bigPic">
+				<img src = "mckinney1.jpg" id = "big" height = "400" width = "700">
+			</div>
+			<div class = "smallPic">
+				<img src = "mckinney2.jpg" id = "small1" height = "100" width = "150" onclick = "changeImage(event)">
+			</div>
+			<div class = "smallPic">
+				<img src = "mckinney3.jpg" id = "small2" height = "100" width = "150" onclick = "changeImage(event)">
+			</div>
+			<div class = "smallPic">
+				<img src = "mckinney4.jpg" id = "small3" height = "100" width = "150" onclick = "changeImage(event)">
+			</div>
+			<div class = "text">
+				<p> <strong> Location: </strong> <a href = "https://www.google.com/maps/place/McKinney+Falls+State+Park/@30.1836533,-97.7243831,17z/data=!3m1!4b1!4m13!1m7!3m6!1s0x8644b3be3538b38b:0xfb83098f6001c693!2sMcKinney+Falls+State+Park!8m2!3d30.1836487!4d-97.7221944!10e1!3m4!1s0x8644b3be3538b38b:0xfb83098f6001c693!8m2!3d30.1836487!4d-97.7221944"> 5808 McKinney Falls Pkwy, Austin, TX 78744 </a> </p> 
+				<p> </p>
+				<p> <strong> What is it?: </strong> This state park is dominated by a series of natural waterfalls, and you'll be amazed when you see them in person! It is also a popular camping and hiking location.</p>
+				<p> </p>
+				<p> <strong> Things to do: </strong> Hiking, Swimming, Camping, Waterfall </p>
+				<p> </p>
+				<p> <strong> Our Rating: </strong> To die for! </p>
+				<p> </p>
+				<p> <strong> Tags: </strong> Outdoors</p>
+
+			</div>
 		</div>
 
 		<div id = "footer">
-			Kimmi Sin | Last Updated: 03/10/2021
+			Braden Wu | Last Updated: 03/31/2021
 		</div>
 	</div>
 
