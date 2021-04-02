@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
-	<title> Project Starter </title>
+	<title> Waterloo Adventures </title>
 	<meta charset = "UTF-8">
 	<meta name = "description" content = "UT Austin Guide">
-	<meta name = "author" content = "Kimmi Sin">
+	<meta name = "author" content = "Braden Wu">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- change the css to your renamed starter.css -->
-	<link href = "starter.css" rel = "stylesheet">
+    <link href = "starter.css" rel = "stylesheet">
+	<link href = "location.css" rel = "stylesheet">
 	<script src="searchBar.js"></script>
+	<script src = "location.js" defer> </script>
 </head>
 
 <body>
 	<div id = "container">
-
 		<!-- includes: logo, banner -->
 		<div id = "top">
 			<div id = "logo_set">
@@ -47,23 +47,43 @@
 			<a href = "resources.html">Resources</a>
 			<a href = "suggestions.html">Suggestions</a>
 			<div id="searchbar">
-            	<button id="searchButton" onclick="expandSearchBar();"><i id="icon" class="fa fa-search"></i></button>
-                <form id="searchForm" method="POST" action="search.php">
-                    <input id="searchbox" type="text" placeholder="search" >
-                </form>
-            </div>
+				<button id="searchButton" onclick="expandSearchBar();"><i id="icon" class="fa fa-search"></i></button>
+				<form id="searchForm" method="POST" action="search.php">
+					<input id="searchbox" type="text" placeholder="search" >
+				</form>
+			</div>
 		</div>
 
 		<div id = "content">
-			<!-- keep h1 tag and update the content in the tag-->
 			<h1> Lake Travis Waterloo Adventures </h1>
-			<p> 
-				Location photos and information
-			</p>
+			<div class = "bigPic">
+				<img src = "waterloo1.jpg" id = "big" height = "400" width = "700">
+			</div>
+			<div class = "smallPic">
+				<img src = "waterloo2.jpg" id = "small1" height = "100" width = "150" onclick = "changeImage(event)">
+			</div>
+			<div class = "smallPic">
+				<img src = "waterloo3.jpg" id = "small2" height = "100" width = "150" onclick = "changeImage(event)">
+			</div>
+			<div class = "smallPic">
+				<img src = "waterloo4.jpg" id = "small3" height = "100" width = "150" onclick = "changeImage(event)">
+			</div>
+			<div class = "text">
+				<p> <strong> Location: </strong> <a href = "https://www.google.com/maps/place/Lake+Travis+Waterloo+Adventures/@30.4290346,-97.8922507,17z/data=!3m1!4b1!4m5!3m4!1s0x865b319b7e36bc97:0xfa1ab725a899e51b!8m2!3d30.42903!4d-97.890062"> 14529 Pocohontas Trail Suite A, Leander, TX 78641 </a> </p> 
+				<p> </p>
+				<p> <strong> What is it?: </strong> Waterloo Adventures is a floating water park found right here on Lake Travis. Guaranteed fun for all ages!</p>
+				<p> </p>
+				<p> <strong> Things to do: </strong> Swimming, Pinic, Water Sports </p>
+				<p> </p>
+				<p> <strong> Our Rating: </strong> Highly Recommended! </p>
+				<p> </p>
+				<p> <strong> Tags: </strong> Outdoors</p>
+
+			</div>
 		</div>
 
 		<div id = "footer">
-			Kimmi Sin | Last Updated: 03/10/2021
+			Braden Wu | Last Updated: 03/31/2021
 		</div>
 	</div>
 

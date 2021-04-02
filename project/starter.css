@@ -22,7 +22,7 @@ body, #container, #top {
 	font-weight: bold;
 }
 
-#top #logo_set #utag{
+#top #logo_set #utag {
 	position: absolute;
 	bottom: 0.3vw;
 	left: 1vw;
@@ -100,10 +100,10 @@ body, #container, #top {
 }
 
 button {
-        background-color: inherit;
-        border: none;
-        outline: none;
-        font-size: inherit;
+	background-color: inherit;
+	border: none;
+	outline: none;
+	font-size: inherit;
 }
 
 #menu a:hover, .dropdown:hover .dropbutton {

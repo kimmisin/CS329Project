@@ -5,9 +5,11 @@
 	<meta charset = "UTF-8">
 	<meta name = "description" content = "UT Austin Guide">
 	<meta name = "author" content = "Braden Wu">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href = "outdoor.css" rel = "stylesheet">
-	<script src="searchBar.js"></script>
+   	<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href = "starter.css" rel = "stylesheet">
+	<link href = "locationList.css" rel ="stylesheet">
+	<script src = "searchBar.js"></script>
+	<!--add addtional js file if needed-->
 </head>
 
 <body>
@@ -45,11 +47,11 @@
 			<a href = "resources.html">Resources</a>
 			<a href = "suggestions.html">Suggestions</a>
 			<div id="searchbar">
-            	<button id="searchButton" onclick="expandSearchBar();"><i id="icon" class="fa fa-search"></i></button>
-                <form id="searchForm" method="POST" action="search.php">
-                    <input id="searchbox" type="text" placeholder="search" >
-                </form>
-            </div>
+				<button id="searchButton" onclick="expandSearchBar();"><i id="icon" class="fa fa-search"></i></button>
+				<form id="searchForm" method="POST" action="search.php">
+					<input id="searchbox" type="text" placeholder="search" >
+				</form>
+			</div>
 		</div>
 
 		<form>
