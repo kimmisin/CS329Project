@@ -4,52 +4,58 @@
 	padding: 0px;
 }
 
-.bigPic{
-	border-right: 30px solid transparent;
-	border-left: 30px solid transparent;
-	border-top: 10px solid transparent;
-	border-bottom: 20px solid transparent;
+.slideshow{
+	padding: 2vw;
+	text-align: center;
+	display: block;
+}
+
+.slideshow img {
+	width: 40vw;
+	height: 24vw;
+}
+
+#smallGroup {
+	margin: 2vw;
+	height: 60vw;
 	text-align: center;
 }
 
 .smallPic{
-	width: 350px;
-	height: 350px;
-	border-right: 50px solid transparent;
-	border-left: 50px solid transparent;
-	border-top: 10px solid transparent;
-	border-bottom: 10px solid transparent;
-	float: right;
+	width: 40%;
+	height: 50%;
+	display: inline-block;
 	margin: auto;
 	text-align: center;
 }
 
-.slideshow{
-	border-right: 30px solid transparent;
-	border-left: 30px solid transparent;
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid transparent;
-        text-align: center;
+.smallPic img {
+	width: 23vw;
+	height: 15vw;
 }
 
-
-div[class = "text"] {
-	padding: 10px;
+.text {
+	padding: 0px 10px;
 	text-align: center;
 	margin: auto;
 }
 
 #footer {
-	padding: 20px;
+	padding: 1vw;
 	clear: both;
 	text-align: center;
 }
+
+.slideshow a {
+	display: block;
+}
+
 
 a.readmore:link, a.readmore:visited {
 	background-color: white;
 	color: black;
 	border: 2px solid #ff8c00;
-	padding: 10px 20px;
+	padding: 1vw 1.5vw;
 	text-align:center;
 	text-decoration:none;
 	display:inline-block;
