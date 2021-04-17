@@ -56,10 +56,10 @@
 		</div>
 
 		<div id = "rightnav">
-			<form method = "POST">
+			<form method = "POST" onsubmit="return validateEmail(this)" action="suggestions.php">
 				Subcribe for website updates:
 				<div id = "email_textarea">
-					<input name ="email" type="text" placeholder="JaneDoe@gmail.com">
+					<input name ="email" type="text" placeholder="JaneDoe@gmail.com" required>
 				</div>
 				<input id="email" type = "submit" value = "Submit">
 			</form>
@@ -70,19 +70,19 @@
 			<p> 
 				Fill out the survey form below to aid in the future development of this site. Your input will guide the site's focus on displaying specific activity types and create a more user friendly environment.
 			</p>
-			<form method = "POST" >
+			<form method = "POST" onsubmit="return validateSurvey(this)" action="suggestions.php">
 				<!-- Dropdown for user affiliation with UT -->
 				<div class = "form_item">
 				<label> 
 					Are you affiliated with UT Austin?
 				</label>
-				<select id = "affiliation">
-					<option selected = "selected"></option>
-						<option> Faculty </option>
-						<option> Student </option>
-						<option> Prospective Student </option>
-						<option> Not Affiliated </option>
-						<option> Other </option>
+				<select id = "affiliation" name="affiliation">
+				<option selected = "selected" value="-">-</option>
+						<option value="faculty"> Faculty </option>
+						<option value="student"> Student </option>
+						<option value="prospective"> Prospective Student </option>
+						<option value="unafiliated"> Not Affiliated </option>
+						<option value="other"> Other </option>
 				</select>
 				</div>
 
@@ -91,11 +91,11 @@
 				<label>
 					What is your experience with Austin?
 				</label>
-				<select id = "experience">
-					<option selected = "selected"></option>
-						<option> Austin Resident </option>
-						<option> Visited a few times </option>
-						<option> Never Visited </option>
+				<select id = "experience" name="experience">
+					<option selected = "selected" value="-">-</option>
+						<option value="resident"> Austin Resident </option>
+						<option value="few"> Visited a few times </option>
+						<option value="never"> Never Visited </option>
 				</select>
 				</div>
 
@@ -105,12 +105,12 @@
 					Indicate which of the following activity types you are interested in our site displaying more locations of.
 				</label>
 				<div id = "checkbox">
-				<input name = "interest" type = "checkbox" value = "Outdoor"><label> Outdoor Activities </label>
-				<input name = "interest" type = "checkbox" value = "Indoor"><label> Indoor Activities </label>
-				<input name = "interest" type = "checkbox" value = "Entertainment"><label> Entertainment </label>
-				<input name = "interest" type = "checkbox" value = "Study"><label> Study Spots </label>
-				<input name = "interest" type = "checkbox" value = "Dining"><label> Dining </label>
-				<input name = "interest" type = "checkbox" value = "Sports"><label> Sports </label>
+				<input name = "interest[]" type = "checkbox" value = "Outdoor"><label> Outdoor Activities </label>
+				<input name = "interest[]" type = "checkbox" value = "Indoor"><label> Indoor Activities </label>
+				<input name = "interest[]" type = "checkbox" value = "Entertainment"><label> Entertainment </label>
+				<input name = "interest[]" type = "checkbox" value = "Study"><label> Study Spots </label>
+				<input name = "interest[]" type = "checkbox" value = "Dining"><label> Dining </label>
+				<input name = "interest[]" type = "checkbox" value = "Sports"><label> Sports </label>
 				</div>
 				</div>
 
@@ -123,13 +123,13 @@
 					</div>
 				
 				<input type = "reset" value = "Clear">
-				<input id="surveyForm" type = "submit" value = "Submit">
+				<input id="surveyForm" type = "submit" name="surveySubmit" value = "Submit">
 				
 			</form>
 		</div>
 
 		<div id = "footer">
-			Kimmi Sin | Last Updated: 03/31/2021
+			Kimmi Sin | Last Updated: 04/17/2021
 		</div>
 	</div>
 
