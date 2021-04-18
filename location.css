@@ -1,0 +1,35 @@
+.category {
+	float: left;
+	border: 30px solid transparent;
+	margin: 1px;
+	padding: 1px;
+	text-align: center;
+}
+
+.smallPic {
+	float: left;
+	border: 10px solid transparent;
+	margin: auto;
+	width: 213.5px;
+	text-align: center;
+}
+
+.smallPic:hover{
+	cursor: pointer;
+	border: 10px solid black;
+}
+
+img {
+	margin: auto;
+}
+
+.text {
+	float: left;
+	border: 5px solid transparent;
+	font-size: 110%;
+}
+
+#footer {
+	clear: both;
+	text-align: center;
+}

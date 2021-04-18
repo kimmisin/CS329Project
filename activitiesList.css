@@ -1,0 +1,11 @@
+.category {
+	float: left;
+	border: 30px solid transparent;
+	margin: 1px;
+	padding: 1px;
+	text-align: center;
+}
+
+#footer {
+	clear: both;
+}

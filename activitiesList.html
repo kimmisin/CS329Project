@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title> Activities List </title>
+	<meta charset = "UTF-8">
+	<meta name = "description" content = "UT Austin Guide">
+	<meta name = "author" content = "Braden Wu">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href = "starter.css" rel = "stylesheet">
+	<link href = "activitiesList.css" rel = "stylesheet">
+	<script src="searchBar.js"></script>
+	<script src = "colors.js"></script>
+	<script src = "eventheodds.js"></script>
+</head>
+
+<body id = "body">
+	<div id = "container">
+		<!-- includes: logo, banner -->
+                <div id = "top">
+                        <div id = "logo_set">
+				<a href = "home.html" style="text-decoration:none; color:inherit;">
+                                <img id = "logo" src = "logo.png" alt = "UTag Logo">
+                                <p id = "utag">UTag</p>
+                                <p id = "phrase">University of Texas at Austin Guide</p>
+                        </div>
+                <img id = "banner" src = "home.jpg" alt = "UT Campus Image">
+                </div>
+
+		<div id = "menu">		
+			<!-- even the odds functionality -->
+			<a href = "home.html">Home</a>			
+			<div class = "dropdown">
+				<form class = "dropbutton" action = "activitiesList.html" method = "get">
+                                        <button>Activity Type</button>
+                                	</form>
+				<div class = "activitycontent">
+					<ul>
+						<li><a href = "outdoor.html">Outdoor Activities</a></li>
+						<li><a href = "indoor.html">Indoor Activities</a></li>
+						<li><a href = "entertainment.html">Entertainment</a></li>
+						<li><a href = "study.html">Study Spots</a></li>
+						<li><a href = "dining.html">Dining</a></li>
+						<li><a href = "sports.html">Sports</a></li>
+					</ul>
+				</div>
+			</div>
+			<a href = "about.html">About Us</a>
+			<a href = "resources.html">Resources</a>
+			<a href = "suggestions.html">Suggestions</a>
+					
+			<div class = "dropdown">
+				<form class = "dropbutton">
+                                        <button>Color Mode</button>
+                                	</form>
+				<div class = "activitycontent">
+					<ul>
+						<li><a href = "#" onclick = "dayMode()">Day Mode</a></li>
+						<li><a href = "#" onclick = "nightMode()">Night Mode</a></li>
+					</ul>
+				</div>
+			</div>
+
+
+			<div id="searchbar">
+            	<button id="searchButton" onclick="expandSearchBar();"><i id="icon" class="fa fa-search"></i></button>
+                <form id="searchForm" method="POST" action="search.php">
+                    <input id="searchbox" type="text" placeholder="search" >
+                </form>
+            </div>
+		</div>
+		<div id = "content">
+			<h1 style = "text-align: center;"> Locations by Activity Type </h1>
+			<div class = category id = "outdoor">
+				<a href = "outdoor.html"><img src = "https://www.tripsavvy.com/thmb/FKvUCRFBhC-RpFEV8tAixroM0DQ=/950x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-500491816-5a830da3c6733500377bd4e4.jpg" width = "400" height = "200" alt = "Outdoor"></a>
+				<h2> Outdoor Activities </h2>
+			</div>
+			
+			<div class = "category" id = "study">
+				<a href = "study.html"><img src = "https://upload.wikimedia.org/wikipedia/commons/0/0b/PCL3.JPG" alt = "PCL Library" width = "400" height = "200"></a>
+				<h2> Study Spots </h2>
+			</div>
+			
+			<div class = "category" id = "indoor">
+				<a href = "indoor.html"><img src = "https://assets.simpleviewinc.com/simpleview/image/fetch/c_limit,q_75,w_1200/https://assets.simpleviewinc.com/simpleview/image/upload/crm/austin/museum-of-the-weird-ee8d7831042d4ba_ee8d7949-d7f3-bd48-21ac6cb9d2b50163.jpg" alt = "Museum of the Wierd" height = "200" width = "400"></a>
+				<h2> Indoor Activites </h2>
+			</div>
+			
+			<div class = "category" id = "dining">
+				<a href = "dining.html"><img src = "https://s7d2.scene7.com/is/image/TWCNews/10_17_austin_homeslicepizzajpg" alt = "Homeslice Pizza" height = "200" width = "400"></a>
+				<h2> Dining </h2>
+			</div>
+
+			<div class = "category" id = "entertainment">	
+				<a href = "entertainment.html"><img src = "https://d1fvos7zvcf2gi.cloudfront.net/venues/762/photo/childish-gambino-austin-city-limits.jpg" alt = "ACL" height = "200" width = "400"></a>
+				<h2> Entertainment </h2>
+			</div>
+
+			<div class = "category" id = "sports">
+				<a href = "sports.html"><img src = "https://upload.wikimedia.org/wikipedia/commons/2/26/Darrell_K_Royal-Texas_Memorial_Stadium_at_Night.jpg" alt = "DKR Stadium" height = "200" width = "400"></a>			
+				<h2> Sports </h2>
+			</div>
+		</div>
+
+		<div id = "footer">
+			Braden Wu | Last Updated: 03/10/2021
+		</div>
+	</div>
+
+</body>
+</html>
