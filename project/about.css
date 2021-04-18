@@ -1,10 +1,10 @@
-#content img {
-	margin-top: 1vw;
-	display: inline-block;
-	width: 15vw;
-	height: 15vw;
-	border-radius: 50%;
-	border: 5px solid darkorange;
+#photo {
+	text-align:center;
+	display:block;
+	width:40%;
+	margin-left:auto;
+	margin-right:auto;
+	object-fit: cover;
 }
 
 .rightalign{
@@ -13,14 +13,4 @@
 
 .leftalign{
 	text-align:left;
-}
-
-.text {
-	display: inline-block;
-	width: 70%;
-	padding: 1vw;
-}
-
-hr {
-	border: 2px solid darksalmon;
 }

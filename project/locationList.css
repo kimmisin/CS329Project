@@ -1,20 +1,26 @@
-.content {
-	width: 100%;
-	height: 80%;
-}
-.activity {
-	display: block;
-	margin: 1vw 2vw 1vw 0vw;
-}
-
-.activity img {
- 	display: inline-block;
- 	width: 25vw;
- 	height: 17vw;
+.category {
+	float: left;
+	border: 30px solid transparent;
+	margin: 1px;
+	padding: 1px;
+	text-align: center;
 }
 
-.text {
+div[class = "activity"]{
 	display: inline-block;
-	vertical-align: top;
-	padding: 2.5vw 1vw;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+}
+
+div[class = "text"] {
+	border: 20px solid transparent;
+	padding: 10px;
+	float: right;
+	text-align: left;
+	margin: auto;
+}
+
+#footer {
+	clear: both;
+	text-align: center;
 }

@@ -4,8 +4,8 @@ function eventheodds() {
 	'bullock', 'blanton', 'weird', 'thinkery', 'capitol', 
 	'acl', 'sxsw', 'zach', 'long', '6th',
 	'pcl', 'monkey', 'medici', 'fac', 'union',
-	'homeslice', 'gus', 'gordoughs', 'patio', 'franklins',
-	'dkr', 'greg', 'circuit', 'fec', 'bouldering' ];
+	'homeslice', 'gus', 'gourdoughs', 'patio', 'franklins',
+	'dkr', 'greg', 'circuit', 'fec', 'bouldering'];
 
 	randomIdx = Math.trunc(Math.random()*locations.length);
 
