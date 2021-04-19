@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title> Suggestions Page </title>
+	<meta charset = "UTF-8">
+	<meta name = "description" content = "UT Austin Guide">
+	<meta name = "author" content = "Kimmi Sin">
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href = "starter.css" rel = "stylesheet">
+	<link href = "suggestions.css" rel = "stylesheet">
+	<script src="jquery-3.6.0.js"></script>
+	<script src="searchBar.js"></script>
+	<script src="suggestions.js"></script>
+	<script src = "colors.js"></script>
+</head>
+
+<body id = "body">
+<?php
+	if (isset($_COOKIE["color"])){
+		$value = $_COOKIE["color"];
+		if ($value == "Night Mode"){
+			echo "<script> setNight(); </script>";
+		}else{
+			echo "<script> setDay(); </script>";		
+		}
+	}
+
+print<<<page
+
+	<div id = "container">
+		<!-- includes: logo, banner -->
+                <div id = "top">
+			<div id = "logo_set">
+                                <a href = "home.php" style="text-decoration:none; color:inherit;">
+                                        <img id = "logo" src = "logo.png" alt = "UTag Logo">
+                                        <p id = "utag">UTag</p>
+                                        <p id = "phrase">University of Texas at Austin Guide</p>
+                                </a>
+                        </div>
+                	<img id = "banner" src = "suggestions.jpg" alt = "UT Campus Image">
+                </div>
+
+		<div id = "menu">		
+			<a href = "home.php">Home</a>
+			<div class = "dropdown">
+				<form class = "dropbutton" action = "activitiesList.php" method = "get">
+                                        <button>Activity Type</button>
+                                	</form>
+				<div class = "activitycontent">
+					<ul>
+						<li><a href = "outdoor.php">Outdoor Activities</a></li>
+						<li><a href = "indoor.php">Indoor Activities</a></li>
+						<li><a href = "entertainment.php">Entertainment</a></li>
+						<li><a href = "study.php">Study Spots</a></li>
+						<li><a href = "dining.php">Dining</a></li>
+						<li><a href = "sports.php">Sports</a></li>
+					</ul>
+				</div>
+			</div>
+			<a href = "about.php">About Us</a>
+			<a href = "resources.php">Resources</a>
+			<a href = "suggestionsPage.php">Suggestions</a>
+			<a href = "favorites.php">Favorites</a>
+			<a href = "color.php">Page Customization</a>
+			
+			<div id="searchbar">
+            	<button id="searchButton" onclick="expandSearchBar();"><i id="icon" class="fa fa-search"></i></button>
+                <form id="searchForm" method="POST" action="search.php">
+                    <input id="searchbox" type="text" placeholder="search" >
+                </form>
+            </div>
+		</div>
+
+		<div id = "rightnav">
+			<form method = "POST" onsubmit="return validateEmail(this)" action="suggestions.php">
+				Subcribe for website updates:
+				<div id = "email_textarea">
+					<input name ="email" type="text" placeholder="JaneDoe@gmail.com" required>
+				</div>
+				<input id="email" type = "submit" value = "Submit">
+			</form>
+		</div>
+
+		<div id = "content">
+			<h1> Help Improve Our Website </h1>
+			<p> 
+				Fill out the survey form below to aid in the future development of this site. Your input will guide the site's focus on displaying specific activity types and create a more user friendly environment.
+			</p>
+			<form method = "POST" onsubmit="return validateSurvey(this)" action="suggestions.php">
+				<!-- Dropdown for user affiliation with UT -->
+				<div class = "form_item">
+				<label> 
+					Are you affiliated with UT Austin?
+				</label>
+				<select id = "affiliation" name="affiliation">
+				<option selected = "selected" value="-">-</option>
+						<option value="faculty"> Faculty </option>
+						<option value="student"> Student </option>
+						<option value="prospective"> Prospective Student </option>
+						<option value="unafiliated"> Not Affiliated </option>
+						<option value="other"> Other </option>
+				</select>
+				</div>
+
+				<!-- Dropdown for user's experience with Austin -->
+				<div class = "form_item">
+				<label>
+					What is your experience with Austin?
+				</label>
+				<select id = "experience" name="experience">
+					<option selected = "selected" value="-">-</option>
+						<option value="resident"> Austin Resident </option>
+						<option value="few"> Visited a few times </option>
+						<option value="never"> Never Visited </option>
+				</select>
+				</div>
+
+				<!-- Radio buttons for user's interested activity types -->
+				<div class = "form_item">
+				<label>
+					Indicate which of the following activity types you are interested in our site displaying more locations of.
+				</label>
+				<div id = "checkbox">
+				<input name = "interest[]" type = "checkbox" value = "Outdoor"><label> Outdoor Activities </label>
+				<input name = "interest[]" type = "checkbox" value = "Indoor"><label> Indoor Activities </label>
+				<input name = "interest[]" type = "checkbox" value = "Entertainment"><label> Entertainment </label>
+				<input name = "interest[]" type = "checkbox" value = "Study"><label> Study Spots </label>
+				<input name = "interest[]" type = "checkbox" value = "Dining"><label> Dining </label>
+				<input name = "interest[]" type = "checkbox" value = "Sports"><label> Sports </label>
+				</div>
+				</div>
+
+				<!-- Textarea for user suggestions and comments -->
+				<p>
+					<label>If you have location recommendations, a suggestion for a new activity type, or any comments about the website and its functionalities, please enter them below.</label>
+				</p>
+					<div id = "textarea">	
+						<textarea name = "comments" placeholder="Type your input here."></textarea>
+					</div>
+				
+				<input type = "reset" value = "Clear">
+				<input id="surveyForm" type = "submit" name="surveySubmit" value = "Submit">
+				
+			</form>
+		</div>
+
+		<div id = "footer">
+			Kimmi Sin | Last Updated: 04/17/2021
+		</div>
+	</div>
+
+</body>
+</html>
+page;
+?>
