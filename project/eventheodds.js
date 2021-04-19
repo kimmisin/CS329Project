@@ -9,7 +9,7 @@ function eventheodds() {
 
 	randomIdx = Math.trunc(Math.random()*locations.length);
 
-	page = locations[randomIdx] + ".html"
+	page = locations[randomIdx] + ".php"
 	console.log (page);
 
 	document.getElementById('randomLocation').href = page;

@@ -5,7 +5,7 @@
 	<meta charset = "UTF-8">
 	<meta name = "description" content = "UT Austin Guide">
 	<meta name = "author" content = "Braden Wu, Brinnah Welmaker">
-    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href = "starter.css" rel = "stylesheet">
 	<link href = "home.css" rel = "stylesheet">
 	<script src="eventheodds.js"></script>
@@ -149,7 +149,7 @@ print<<<page2
 			</div>
 			<a href = "about.php">About Us</a>
 			<a href = "resources.php">Resources</a>
-			<a href = "suggestions.php">Suggestions</a>
+			<a href = "suggestionsPage.php">Suggestions</a>
 			<a href = "color.php">Page Customization </a>
 
 

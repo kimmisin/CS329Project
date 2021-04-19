@@ -11,11 +11,15 @@
 	<script src="jquery-3.6.0.js"></script>
 	<script src="searchBar.js"></script>
 	<script src="suggestions.js"></script>
-	<script src = "colors.js"></script>
+	<script src ="colors.js"></script>
 </head>
 
 <body id = "body">
 <?php
+	error_reporting(E_ALL);
+	ini_set("display_errors", "on");
+	
+	// color mode
 	if (isset($_COOKIE["color"])){
 		$value = $_COOKIE["color"];
 		if ($value == "Night Mode"){
@@ -24,28 +28,26 @@
 			echo "<script> setDay(); </script>";		
 		}
 	}
-
-print<<<page
-
+?>
 	<div id = "container">
 		<!-- includes: logo, banner -->
-                <div id = "top">
+        <div id = "top">
 			<div id = "logo_set">
-                                <a href = "home.php" style="text-decoration:none; color:inherit;">
-                                        <img id = "logo" src = "logo.png" alt = "UTag Logo">
-                                        <p id = "utag">UTag</p>
-                                        <p id = "phrase">University of Texas at Austin Guide</p>
-                                </a>
-                        </div>
-                	<img id = "banner" src = "suggestions.jpg" alt = "UT Campus Image">
-                </div>
+                <a href = "home.php" style="text-decoration:none; color:inherit;">
+                    <img id = "logo" src = "logo.png" alt = "UTag Logo">
+                    <p id = "utag">UTag</p>
+                    <p id = "phrase">University of Texas at Austin Guide</p>
+                </a>
+            </div>
+            <img id = "banner" src = "suggestions.jpg" alt = "UT Campus Image">
+        </div>
 
 		<div id = "menu">		
 			<a href = "home.php">Home</a>
 			<div class = "dropdown">
 				<form class = "dropbutton" action = "activitiesList.php" method = "get">
-                                        <button>Activity Type</button>
-                                	</form>
+                    <button>Activity Type</button>
+                </form>
 				<div class = "activitycontent">
 					<ul>
 						<li><a href = "outdoor.php">Outdoor Activities</a></li>
@@ -151,5 +153,4 @@ print<<<page
 
 </body>
 </html>
-page;
-?>
+
