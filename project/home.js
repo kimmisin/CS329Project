@@ -1,6 +1,6 @@
 var image_source = new Array("krause1.jpg", "medici1.jpg", "franklins1.jpg", "sxsw2.png", "union1.jpg", "gordoughs1.jpg");  
 
-var image_link = new Array("krause.html", "medici.html", "franklins.html", "sxsw.html", "union.html", "gordoughs.html");
+var image_link = new Array("krause.php", "medici.php", "franklins.php", "sxsw.php", "union.php", "gordoughs.php");
 
 var caption = new Array("Explore Krause", "Explore Medici", "Explore Franklins BBQ","Explore SXSW","Explore The Union", "Explore Gordoughs");
 

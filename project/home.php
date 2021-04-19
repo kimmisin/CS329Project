@@ -5,7 +5,7 @@
 	<meta charset = "UTF-8">
 	<meta name = "description" content = "UT Austin Guide">
 	<meta name = "author" content = "Braden Wu, Brinnah Welmaker">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href = "starter.css" rel = "stylesheet">
 	<link href = "home.css" rel = "stylesheet">
 	<script src="eventheodds.js"></script>
@@ -43,7 +43,7 @@ print<<<page
 			<!-- even the odds functionality -->
 			<a id="randomLocation" href='#' onclick="eventheodds()">Even the Odds</a>
 			<div class = "dropdown">
-				<form class = "dropbutton" action = "activitiesList.html" method = "get">
+				<form class = "dropbutton" action = "activitiesList.php" method = "get">
                                         <button>Activity Type</button>
                                 	</form>
 				<div class = "activitycontent">
