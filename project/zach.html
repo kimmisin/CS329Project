@@ -48,7 +48,7 @@
 			<a href = "about.html">About Us</a>
 			<a href = "resources.html">Resources</a>
 			<a href = "suggestions.html">Suggestions</a>
-			<a href = "favorites.html">Favorites</a>
+			<a href = "favorites.php">Favorites</a>
 
 			<div class = "dropdown">
 				<form class = "dropbutton">
@@ -97,6 +97,10 @@
 				<p> <strong> Our Rating: </strong> Do it! </p>
 				<p> </p>
 				<p> <strong> Tags: </strong> Entertainment</p>
+			<form action = 'addfavorite.php' method = 'POST'>
+                                <input type = 'hidden' name = 'link' value = '6th.html'/>
+                                <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
+                        </form>
 
 			</div>
 

@@ -23,7 +23,7 @@ if (isset($_POST['newpassword']) && isset($_POST['newusername'])){
         if ($nameError){
                 header("Location: register.html");
         }else{
-                setcookie("username", $usern, 2147483647, "/");
+                setcookie("username", $usern, time() + 1000, "/");
                 $file = fopen("users.txt", "a") or die  ("can't open file to write");
                 $txt = $usern . ":";
                 fwrite($file, $txt);
@@ -31,7 +31,7 @@ if (isset($_POST['newpassword']) && isset($_POST['newusername'])){
                 fwrite($file, $txt2);
                 fclose($file);
 
-                header("Location: favorites.html");
+                header("Location: favorites.php");
                 
         }
 }

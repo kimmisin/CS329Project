@@ -17,12 +17,11 @@ if (isset($_POST['username']) && isset($_POST['password'])){
         }
 
         if ($loggedIn){
-                setcookie("username", $usern, 2147483647, "/");
-                
-                header("Location: favorites.html");
+                setcookie("username", $usern, time() + 1000, "/"); 
+                header("Location: favorites.php");
                 
         }else{
-                header("Location: favorites.html");
+                header("Location: login.html");
         }
 
         fclose($file);
