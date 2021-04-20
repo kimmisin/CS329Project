@@ -26,7 +26,6 @@
 	}
 
 print<<<page
-
 	<div id = "container">
 		<!-- includes: logo, banner -->
         <div id = "top">
@@ -72,8 +71,6 @@ print<<<page
             </div>
 		</div>
 
-		<form>
-
 		<div id = "content">
 			<h1> Zilker Park </h1>
 			<div class = "bigPic">
@@ -106,8 +103,6 @@ print<<<page
 			</div>
 
 		</div>
-
-		</form>
 		
 		<div id = "footer">
 			Braden Wu | Last Updated: 03/10/2021

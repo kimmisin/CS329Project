@@ -25,15 +25,15 @@
 	}
 
 print<<<page
-
 	<div id = "container">
 		<!-- includes: logo, banner -->
         <div id = "top">
             <div id = "logo_set">
 				<a href = "home.php" style="text-decoration:none; color:inherit;">
-                <img id = "logo" src = "logo.png" alt = "UTag Logo">
-                <p id = "utag">UTag</p>
-                <p id = "phrase">University of Texas at Austin Guide</p>
+	                <img id = "logo" src = "logo.png" alt = "UTag Logo">
+	                <p id = "utag">UTag</p>
+	                <p id = "phrase">University of Texas at Austin Guide</p>
+                </a>
             </div>
         	<img id = "banner" src = "home.jpg" alt = "UT Campus Image">
         </div>

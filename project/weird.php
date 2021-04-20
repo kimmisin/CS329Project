@@ -72,8 +72,6 @@ print<<<page
             </div>
 		</div>
 
-		<form>
-
 		<div id = "content">
 			<h1> Museum of the Weird </h1>
 			<div class = "bigPic">
@@ -102,12 +100,8 @@ print<<<page
 	                <input type = 'hidden' name = 'link' value = '6th.php'/>
 	                <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
 	            </form>
-
 			</div>
-
 		</div>
-
-		</form>
 		
 		<div id = "footer">
 			Braden Wu | Last Updated: 03/10/2021

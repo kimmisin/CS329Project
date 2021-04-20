@@ -158,9 +158,9 @@
 				</label>
 				<select id = "experience" name="experience">
 					<option selected = "selected" value="-">-</option>
-						<option value="resident"> Austin Resident </option>
-						<option value="few"> Visited a few times </option>
-						<option value="never"> Never Visited </option>
+					<option value="resident"> Austin Resident </option>
+					<option value="few"> Visited a few times </option>
+					<option value="never"> Never Visited </option>
 				</select>
 				</div>
 
@@ -184,7 +184,7 @@
 					<label>If you have location recommendations, a suggestion for a new activity type, or any comments about the website and its functionalities, please enter them below.</label>
 				</p>
 					<div id = "textarea">	
-						<textarea name = "comments" placeholder="Type your input here."></textarea>
+						<textarea id='textbox' name = "comments" placeholder="Type your input here."></textarea>
 					</div>
 				
 				<input type = "reset" value = "Clear">

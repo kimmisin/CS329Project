@@ -151,6 +151,7 @@ print<<<page2
 			<a href = "about.php">About Us</a>
 			<a href = "resources.php">Resources</a>
 			<a href = "suggestionsPage.php">Suggestions</a>
+			<a href = "favorites.php">Favorites</a>
 			<a href = "color.php">Page Customization </a>
 
 			<div id="searchbar">

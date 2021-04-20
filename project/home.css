@@ -52,7 +52,7 @@
 
 
 a.readmore:link, a.readmore:visited {
-	background-color: white;
+	background-color: transparent;
 	color: black;
 	border: 2px solid #ff8c00;
 	padding: 1vw 1.5vw;

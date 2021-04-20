@@ -40,4 +40,9 @@ p label {
 textarea {
 	width: 40vw;
 	height: 10vw;
+	background-color: gainsboro;
+}
+
+input, select {
+	background-color: gainsboro;
 }

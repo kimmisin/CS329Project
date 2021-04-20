@@ -26,7 +26,6 @@
 	}
 
 print<<<page
-
 	<div id = "container">
 		<!-- includes: logo, banner -->
         <div id = "top">
@@ -35,7 +34,7 @@ print<<<page
 	                <img id = "logo" src = "logo.png" alt = "UTag Logo">
 	                <p id = "utag">UTag</p>
 	                <p id = "phrase">University of Texas at Austin Guide</p>
-                <a>
+                </a>
             </div>
         	<img id = "banner" src = "home.jpg" alt = "UT Campus Image">
         </div>
