@@ -8,6 +8,6 @@
 
 <body>
 	<h1> Blank php page: </h1>	
-	<p> Not sure how to implement search bar functionality<br> Kimmi Sin | Last Updated: 04/01/2021</p>
+	<p> Not sure how to implement search bar functionality: Currently planing on using jQuery and arrays of locations named by tag; so the user can search for tags only <br> Kimmi Sin | Last Updated: 04/19/2021</p>
 </body>
 </html>

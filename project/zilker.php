@@ -29,23 +29,23 @@ print<<<page
 
 	<div id = "container">
 		<!-- includes: logo, banner -->
-                <div id = "top">
-                        <div id = "logo_set">
+        <div id = "top">
+            <div id = "logo_set">
 				<a href = "home.php" style="text-decoration:none; color:inherit;">
-                                <img id = "logo" src = "logo.png" alt = "UTag Logo">
-                                <p id = "utag">UTag</p>
-                                <p id = "phrase">University of Texas at Austin Guide</p>
-                        </div>
-                <img id = "banner" src = "home.jpg" alt = "UT Campus Image">
-                </div>
+                <img id = "logo" src = "logo.png" alt = "UTag Logo">
+                <p id = "utag">UTag</p>
+                <p id = "phrase">University of Texas at Austin Guide</p>
+            </div>
+	        <img id = "banner" src = "home.jpg" alt = "UT Campus Image">
+        </div>
 
 		<div id = "menu">		
 			<!-- even the odds functionality -->
 			<a href = "home.php">Home</a>
 			<div class = "dropdown">
 				<form class = "dropbutton" action = "activitiesList.php" method = "get">
-                                        <button>Activity Type</button>
-                                	</form>
+                    <button>Activity Type</button>
+            	</form>
 				<div class = "activitycontent">
 					<ul>
 						<li><a href = "outdoor.php">Outdoor Activities</a></li>
@@ -76,16 +76,16 @@ print<<<page
 		<div id = "content">
 			<h1> Zilker Park </h1>
 			<div class = "bigPic">
-				<img src = "zilker1.jpg" id = "big" height = "400" width = "700">
+				<img src = "zilker1.jpg" id = "big" alt="Image of Zilker Park" height = "400" width = "700">
 			</div>
 			<div class = "smallPic">
-				<img src = "zilker2.jpg" id = "small1" height = "100" width = "150" onclick = "changeImage(event)">
+				<img src = "zilker2.jpg" id = "small1" alt="Image of Zilker Park" height = "100" width = "150" onclick = "changeImage(event)">
 			</div>
 			<div class = "smallPic">
-				<img src = "zilker3.jpg" id = "small2" height = "100" width = "150" onclick = "changeImage(event)">
+				<img src = "zilker3.jpg" id = "small2" alt="Image of Zilker Park" height = "100" width = "150" onclick = "changeImage(event)">
 			</div>
 			<div class = "smallPic">
-				<img src = "zilker4.jpg" id = "small3" height = "100" width = "150" onclick = "changeImage(event)">
+				<img src = "zilker4.jpg" id = "small3" alt="Image of Zilker Park" height = "100" width = "150" onclick = "changeImage(event)">
 			</div>
 			<div class = "text">
 				<p> <strong> Location: </strong> <a href = "https://www.google.com/maps/place/McKinney+Falls+State+Park/@30.1836533,-97.7243831,17z/data=!3m1!4b1!4m13!1m7!3m6!1s0x8644b3be3538b38b:0xfb83098f6001c693!2sMcKinney+Falls+State+Park!8m2!3d30.1836487!4d-97.7221944!10e1!3m4!1s0x8644b3be3538b38b:0xfb83098f6001c693!8m2!3d30.1836487!4d-97.7221944"> 2207 Lou Neff Rd, Austin, TX 78746 </a> </p> 
@@ -97,10 +97,10 @@ print<<<page
 				<p> <strong> Our Rating: </strong> To die for! </p>
 				<p> </p>
 				<p> <strong> Tags: </strong> Outdoors</p>
-			<form action = 'addfavorite.php' method = 'POST'>
-                                <input type = 'hidden' name = 'link' value = '6th.php'/>
-                                <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
-                        </form>
+				<form action = 'addfavorite.php' method = 'POST'>
+                    <input type = 'hidden' name = 'link' value = '6th.php'/>
+                    <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
+                </form>
 
 			</div>
 

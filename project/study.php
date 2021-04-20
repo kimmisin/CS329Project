@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
-	<title> Entertainment </title>
+	<title> Study Spots </title>
 	<meta charset = "UTF-8">
 	<meta name = "description" content = "UT Austin Guide">
-	<meta name = "author" content = "Braden Wu">
+	<meta name = "author" content = "Braden Wu, Kimmi Sin">
     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href = "starter.css" rel = "stylesheet">
 	<link href = "locationList.css" rel ="stylesheet">
-	<script src="searchBar.js"></script>
-	<script src = "colors.js"></script>
-	<script src = "eventheodds.js"></script>
+	<script src = "searchBar.js"></script>
+	<!-- add js or css files as needed-->
 </head>
 
 <body id = "body">
@@ -71,61 +70,60 @@ print<<<page
 		</div>
 
 		<div id = "content">
-			<h1> Entertainment Locations </h1>
+			<h1> Study Spots </h1>
 			<div class = "activity">
-				<img src = "https://dancingastronaut.com/wp-content/uploads/2018/05/Austin-City-Limits-Tickets.png" alt = "ACL" width = "300" height = "200">
+				<img src = "https://upload.wikimedia.org/wikipedia/commons/0/0b/PCL3.JPG" alt = "PCL">
 				<div class = "text">
-					<h3> Austin City Limits</h3>
-					<p> Annual Music Festival hosted within Zilker Park </p>
-					<p> <strong> Tags: </strong> Entertainment </p>
-					<a href = "acl.php"> Read More! </a>
+					<h3> Perry Castaneda Library (PCL) </h3>
+					<p> Main Library on the UT Campus </p>
+					<p> <strong> Tags: </strong> Study Spots </p>
+					<a href = "pcl.php"> Read More! </a>
 				</div>
 			</div>
 			
 			<div class = "activity">
-				<img src = "https://i.insider.com/5a99824e487ff99b038b46f6?width=1100&format=jpeg&auto=webp" alt = "SXSW" width = "300" height = "200">
+				<img src = "https://austinot.com/wp-content/uploads/2015/02/Monkey-Nest-Coffee-Austin.jpg" alt = "Monkey Nest Coffee">
 				<div class = "text">
-					<h3> South By Southwest </h3>
-					<p> Annual Media/Technology Conference hosted within Downtown Austin. </p>
-					<p> <strong> Tags: </strong> Entertainment </p>
-					<a href = "sxsw.php"> Read More! </a>
+					<h3> Monkey Nest Coffee </h3>
+					<p> Quirky coffee shop located 15 min from campus </p>
+					<p> <strong> Tags: </strong> Study Spots </p>
+					<a href = "monkey.php"> Read More! </a>
 				</div>
 			</div>
 
 			<div class = "activity">
-				<img src = "https://upload.wikimedia.org/wikipedia/commons/2/2d/Zach_topfer_theatre_austin_2014.jpg" alt = "ZACH" width = "300" height = "200">
+				<img src = "https://lh5.googleusercontent.com/p/AF1QipO_A5AA38w2SuYLnBylxULlDQYy6lHXFAaEGCyp" alt = "Cafe Medici">
 				<div class = "text">
-					<h3> ZACH Theatre </h3>
-					<p> The ZACH Theatre is the oldest Theatre Group in Texas </p>
-					<p> <strong> Tags: </strong> Entertainment </p>
-					<a href = "zach.php"> Read More! </a>
+					<h3> Caffee Medici </h3>
+					<p> Popular coffee shop located next to UT on Guadaulpe </p>
+					<p> <strong> Tags: </strong> Study Spots </p>
+					<a href = "medici.php"> Read More! </a>
 				</div>
 			</div>
 			
 			<div class = "activity">
-				<img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Long_Center_Side_Entrance.jpg/1200px-Long_Center_Side_Entrance.jpg" alt = "long" width = "300" height = "200">
+				<img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Ut-tower-flawn-academic-night.jpg/1280px-Ut-tower-flawn-academic-night.jpg" alt = "FAC">
 				<div class = "text">
-					<h3> The Long Center for Performing Arts </h3>
-					<p> A well renown and popular performing arts venue located right on the Colorado River. </p>
-					<p> <strong> Tags: </strong> Entertainment </p>
-					<a href = "long.php"> Read More! </a>
+					<h3> Flawn Academic Center (FAC) </h3>
+					<p> The FAC provides students with a collaborative learning space right on campus </p>
+					<p> <strong> Tags: </strong> Study Spots </p>
+					<a href = "fac.php"> Read More! </a>
 				</div>
 			</div>
 
 			<div class = "activity">
-				<img src = "https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/austin/Sixth_Street_Nightlife_Courtesy_Austin_CVB_5816f624-ed92-4b56-9555-043c755c3cb3.jpg" alt = "6th Street" width = "300" height = "200">
+				<img src = "https://upload.wikimedia.org/wikipedia/commons/5/5b/Texas_Union.JPG" alt = "Union">
 				<div class = "text">
-					<h3> 6th Street </h3>
-					<p> 6th Street is the lively home of Austin's Nightlife </p>
-					<p> <strong> Tags: </strong> Entertainment </p>
-					<a href = "6th.php"> Read More! </a>
+					<h3> Texas Union </h3>
+					<p> Like the FAC, the Union provides restaurants and study spaces for students. </p>
+					<p> <strong> Tags: </strong> Study Spots </p>
+					<a href = "union.php"> Read More! </a>
 				</div>
 			</div>
-			
 		</div>
 
 		<div id = "footer">
-			Kimmi Sin | Last Updated: 03/10/2021
+			Braden Wu | Kimmi Sin | Last Updated: 04/05/2021
 		</div>
 	</div>
 

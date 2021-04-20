@@ -1,11 +1,17 @@
-.category {
-	float: left;
-	border: 30px solid transparent;
-	margin: 1px;
-	padding: 1px;
+#categoriesContainer {
+	width: 100%;
+	height: auto;
 	text-align: center;
 }
 
-#footer {
-	clear: both;
+.category {
+	padding: 1vw;
+	margin: auto;
+	display: inline-block;
+	text-align: center;
+}
+
+.category img {
+	width: 30vw;
+	height: 16vw;
 }

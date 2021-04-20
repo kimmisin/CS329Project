@@ -29,23 +29,23 @@ print<<<page
 
 	<div id = "container">
 		<!-- includes: logo, banner -->
-                <div id = "top">
-                        <div id = "logo_set">
+        <div id = "top">
+            <div id = "logo_set">
 				<a href = "home.php" style="text-decoration:none; color:inherit;">
-                                <img id = "logo" src = "logo.png" alt = "UTag Logo">
-                                <p id = "utag">UTag</p>
-                                <p id = "phrase">University of Texas at Austin Guide</p>
-                        </div>
-                <img id = "banner" src = "home.jpg" alt = "UT Campus Image">
-                </div>
+                <img id = "logo" src = "logo.png" alt = "UTag Logo">
+                <p id = "utag">UTag</p>
+                <p id = "phrase">University of Texas at Austin Guide</p>
+            </div>
+        	<img id = "banner" src = "home.jpg" alt = "UT Campus Image">
+        </div>
 
 		<div id = "menu">		
 			<!-- even the odds functionality -->
 			<a href = "home.php">Home</a>
 			<div class = "dropdown">
 				<form class = "dropbutton" action = "activitiesList.php" method = "get">
-                                        <button>Activity Type</button>
-                                	</form>
+                    <button>Activity Type</button>
+            	</form>
 				<div class = "activitycontent">
 					<ul>
 						<li><a href = "outdoor.php">Outdoor Activities</a></li>
@@ -71,21 +71,19 @@ print<<<page
             </div>
 		</div>
 
-		<form>
-
 		<div id = "content">
 			<h1> Krause Springs </h1>
 			<div class = "bigPic">
-				<img src = "krause1.jpg" id = "big" height = "400" width = "700">
+				<img src = "krause1.jpg" id = "big" alt="Image of Krause Springs" height = "400" width = "700">
 			</div>
 			<div class = "smallPic">
-				<img src = "krause2.jpg" id = "small1" height = "100" width = "150" onclick = "changeImage(event)">
+				<img src = "krause2.jpg" id = "small1" alt="Image of Krause Springs" height = "100" width = "150" onclick = "changeImage(event)">
 			</div>
 			<div class = "smallPic">
-				<img src = "krause3.jpg" id = "small2" height = "100" width = "150" onclick = "changeImage(event)">
+				<img src = "krause3.jpg" id = "small2" alt="Image of Krause Springs" height = "100" width = "150" onclick = "changeImage(event)">
 			</div>
 			<div class = "smallPic">
-				<img src = "krause4.jpg" id = "small3" height = "100" width = "150" onclick = "changeImage(event)">
+				<img src = "krause4.jpg" id = "small3" alt="Image of Krause Springs" height = "100" width = "150" onclick = "changeImage(event)">
 			</div>
 			<div class = "text">
 				<p> <strong> Location: </strong> <a href = "https://www.google.com/maps/place/Krause+Springs/@30.4776822,-98.1538487,17z/data=!4m8!1m2!2m1!1skrause+springs!3m4!1s0x865b3cef95c752a7:0xabfd1911c3fac737!8m2!3d30.4776822!4d-98.15166"> 424 Co Rd 404, Spicewood, TX 78669 </a> </p> 
@@ -97,10 +95,10 @@ print<<<page
 				<p> <strong> Our Rating: </strong> We Recommend! </p>
 				<p> </p>
 				<p> <strong> Tags: </strong> Outdoors</p>
-			<form action = 'addfavorite.php' method = 'POST'>
-                                <input type = 'hidden' name = 'link' value = '6th.php'/>
-                                <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
-                        </form>
+				<form action = 'addfavorite.php' method = 'POST'>
+                    <input type = 'hidden' name = 'link' value = '6th.php'/>
+                    <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
+                </form>
 
 			</div>
 		</div>

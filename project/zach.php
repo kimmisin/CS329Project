@@ -29,23 +29,23 @@ print<<<page
 
 	<div id = "container">
 		<!-- includes: logo, banner -->
-                <div id = "top">
-                        <div id = "logo_set">
+        <div id = "top">
+            <div id = "logo_set">
 				<a href = "home.php" style="text-decoration:none; color:inherit;">
-                                <img id = "logo" src = "logo.png" alt = "UTag Logo">
-                                <p id = "utag">UTag</p>
-                                <p id = "phrase">University of Texas at Austin Guide</p>
-                        </div>
-                <img id = "banner" src = "home.jpg" alt = "UT Campus Image">
-                </div>
+                <img id = "logo" src = "logo.png" alt = "UTag Logo">
+                <p id = "utag">UTag</p>
+                <p id = "phrase">University of Texas at Austin Guide</p>
+            </div>
+	        <img id = "banner" src = "home.jpg" alt = "UT Campus Image">
+        </div>
 
 		<div id = "menu">		
 			<!-- even the odds functionality -->
 			<a href = "home.php">Home</a>
 			<div class = "dropdown">
 				<form class = "dropbutton" action = "activitiesList.php" method = "get">
-                                        <button>Activity Type</button>
-                                	</form>
+                    <button>Activity Type</button>
+            	</form>
 				<div class = "activitycontent">
 					<ul>
 						<li><a href = "outdoor.php">Outdoor Activities</a></li>
@@ -76,16 +76,16 @@ print<<<page
 		<div id = "content">
 			<h1> ZACH Theatre </h1>
 			<div class = "bigPic">
-				<img src = "zach1.jpg" id = "big" height = "400" width = "700">
+				<img src = "zach1.jpg" id = "big" alt="Image of ZACH Theatre" height = "400" width = "700">
 			</div>
 			<div class = "smallPic">
-				<img src = "zach2.jpg" id = "small1" height = "100" width = "150" onclick = "changeImage(event)">
+				<img src = "zach2.jpg" id = "small1" alt="Image of ZACH Theatre" height = "100" width = "150" onclick = "changeImage(event)">
 			</div>
 			<div class = "smallPic">
-				<img src = "zach3.jpg" id = "small2" height = "100" width = "150" onclick = "changeImage(event)">
+				<img src = "zach3.jpg" id = "small2" alt="Image of ZACH Theatre" height = "100" width = "150" onclick = "changeImage(event)">
 			</div>
 			<div class = "smallPic">
-				<img src = "zach4.jpg" id = "small3" height = "100" width = "150" onclick = "changeImage(event)">
+				<img src = "zach4.jpg" id = "small3" alt="Image of ZACH Theatre" height = "100" width = "150" onclick = "changeImage(event)">
 			</div>
 			<div class = "text">
 				<p> <strong> Location: </strong> <a href = "https://www.google.com/maps/place/ZACH+Theatre/@30.2641882,-97.7604001,17z/data=!3m2!4b1!5s0x8644b510ada4dea3:0x8f203c9b25eeee15!4m5!3m4!1s0x8644b5175cf3ea09:0x556f6ce3788d1367!8m2!3d30.2641836!4d-97.7582114"> 202 S Lamar Blvd, Austin, TX 78704 </a> </p> 
@@ -97,10 +97,10 @@ print<<<page
 				<p> <strong> Our Rating: </strong> Do it! </p>
 				<p> </p>
 				<p> <strong> Tags: </strong> Entertainment</p>
-			<form action = 'addfavorite.php' method = 'POST'>
-                                <input type = 'hidden' name = 'link' value = '6th.php'/>
-                                <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
-                        </form>
+				<form action = 'addfavorite.php' method = 'POST'>
+	                <input type = 'hidden' name = 'link' value = '6th.php'/>
+	                <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
+	             </form>
 
 			</div>
 

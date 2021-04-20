@@ -29,23 +29,23 @@ print<<<page
 
 	<div id = "container">
 		<!-- includes: logo, banner -->
-                <div id = "top">
-                        <div id = "logo_set">
+        <div id = "top">
+            <div id = "logo_set">
 				<a href = "home.php" style="text-decoration:none; color:inherit;">
-                                <img id = "logo" src = "logo.png" alt = "UTag Logo">
-                                <p id = "utag">UTag</p>
-                                <p id = "phrase">University of Texas at Austin Guide</p>
-                        </div>
-                <img id = "banner" src = "home.jpg" alt = "UT Campus Image">
-                </div>
+                <img id = "logo" src = "logo.png" alt = "UTag Logo">
+                <p id = "utag">UTag</p>
+                <p id = "phrase">University of Texas at Austin Guide</p>
+            </div>
+	        <img id = "banner" src = "home.jpg" alt = "UT Campus Image">
+        </div>
 
 		<div id = "menu">		
 			<!-- even the odds functionality -->
 			<a href = "home.php">Home</a>
 			<div class = "dropdown">
 				<form class = "dropbutton" action = "activitiesList.php" method = "get">
-                                        <button>Activity Type</button>
-                                	</form>
+                    <button>Activity Type</button>
+            	</form>
 				<div class = "activitycontent">
 					<ul>
 						<li><a href = "outdoor.php">Outdoor Activities</a></li>
@@ -77,16 +77,16 @@ print<<<page
 		<div id = "content">
 			<h1> Thinkery </h1>
 			<div class = "bigPic">
-				<img src = "thinkery1.jpg" id = "big" height = "400" width = "700">
+				<img src = "thinkery1.jpg" id = "big" alt="Image of the Thinkery" height = "400" width = "700">
 			</div>
 			<div class = "smallPic">
-				<img src = "thinkery2.jpg" id = "small1" height = "100" width = "150" onclick = "changeImage(event)">
+				<img src = "thinkery2.jpg" id = "small1" alt="Image of the Thinkery" height = "100" width = "150" onclick = "changeImage(event)">
 			</div>
 			<div class = "smallPic">
-				<img src = "thinkery3.jpg" id = "small2" height = "100" width = "150" onclick = "changeImage(event)">
+				<img src = "thinkery3.jpg" id = "small2" alt="Image of the Thinkery" height = "100" width = "150" onclick = "changeImage(event)">
 			</div>
 			<div class = "smallPic">
-				<img src = "thinkery4.jpg" id = "small3" height = "100" width = "150" onclick = "changeImage(event)">
+				<img src = "thinkery4.jpg" id = "small3" alt="Image of the Thinkery" height = "100" width = "150" onclick = "changeImage(event)">
 			</div>
 			<div class = "text">
 				<p> <strong> Location: </strong> <a href = "https://www.google.com/maps/place/Thinkery/@30.2974216,-97.7071597,17z/data=!3m2!4b1!5s0x8644b5f922abc305:0xe81ba453731e89b0!4m5!3m4!1s0x8644b5089ad5aa81:0x505e64e261623ea7!8m2!3d30.297417!4d-97.704971"> 1830 Simond Ave, Austin, TX 787232 </a> </p> 
@@ -98,10 +98,10 @@ print<<<page
 				<p> <strong> Our Rating: </strong> Must Do! </p>
 				<p> </p>
 				<p> <strong> Tags: </strong> Indoors</p>
-			<form action = 'addfavorite.php' method = 'POST'>
-                                <input type = 'hidden' name = 'link' value = '6th.php'/>
-                                <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
-                        </form>
+				<form action = 'addfavorite.php' method = 'POST'>
+                    <input type = 'hidden' name = 'link' value = '6th.php'/>
+                    <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
+                </form>
 
 			</div>
 

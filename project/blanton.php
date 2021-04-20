@@ -29,23 +29,23 @@ print<<<page
 
 	<div id = "container">
 		<!-- includes: logo, banner -->
-                <div id = "top">
-                        <div id = "logo_set">
+        <div id = "top">
+            <div id = "logo_set">
 				<a href = "home.php" style="text-decoration:none; color:inherit;">
-                                <img id = "logo" src = "logo.png" alt = "UTag Logo">
-                                <p id = "utag">UTag</p>
-                                <p id = "phrase">University of Texas at Austin Guide</p>
-                        </div>
-                <img id = "banner" src = "home.jpg" alt = "UT Campus Image">
-                </div>
+                <img id = "logo" src = "logo.png" alt = "UTag Logo">
+                <p id = "utag">UTag</p>
+                <p id = "phrase">University of Texas at Austin Guide</p>
+            </div>
+        	<img id = "banner" src = "home.jpg" alt = "UT Campus Image">
+        </div>
 
 		<div id = "menu">		
 			<!-- even the odds functionality -->
 			<a href = "home.php">Home</a>			
 			<div class = "dropdown">
 				<form class = "dropbutton" action = "activitiesList.php" method = "get">
-                                        <button>Activity Type</button>
-                                	</form>
+                    <button>Activity Type</button>
+            	</form>
 				<div class = "activitycontent">
 					<ul>
 						<li><a href = "outdoor.php">Outdoor Activities</a></li>
@@ -70,20 +70,20 @@ print<<<page
                 </form>
             </div>
 		</div>
-		<form>
+		
 		<div id = "content">
 			<h1> Blanton Museum of Art </h1>
 			<div class = "bigPic">
-				<img src = "blanton1.jpg" id = "big" height = "400" width = "700">
+				<img src = "blanton1.jpg" id = "big" alt="Image of Blanton" height = "400" width = "700">
 			</div>
 			<div class = "smallPic">
-				<img src = "blanton2.jpg" id = "small1" height = "100" width = "150" onclick = "changeImage(event)">
+				<img src = "blanton2.jpg" id = "small1"  alt="Image of Blanton" height = "100" width = "150" onclick = "changeImage(event)">
 			</div>
 			<div class = "smallPic">
-				<img src = "blanton3.jpg" id = "small2" height = "100" width = "150" onclick = "changeImage(event)">
+				<img src = "blanton3.jpg" id = "small2"  alt="Image of Blanton" height = "100" width = "150" onclick = "changeImage(event)">
 			</div>
 			<div class = "smallPic">
-				<img src = "blanton4.jpg" id = "small3" height = "100" width = "150" onclick = "changeImage(event)">
+				<img src = "blanton4.jpg" id = "small3"  alt="Image of Blanton" height = "100" width = "150" onclick = "changeImage(event)">
 			</div>
 			<div class = "text">
 				<p> <strong> Location: </strong> <a href = "https://www.google.com/maps/place/Blanton+Museum+of+Art/@30.2808155,-97.7398725,17z/data=!3m2!4b1!5s0x8644b59ebdad304d:0x32278f9b851cecc0!4m5!3m4!1s0x8644b59e64da373b:0xbecfe07b753cc76d!8m2!3d30.2808109!4d-97.7376838"> 200 E Martin Luther King Jr Blvd, Austin, TX 78712 </a> </p> 
@@ -96,16 +96,12 @@ print<<<page
 				<p> </p>
 				<p> <strong> Tags: </strong> Indoors</p>
 
-			<form action = 'addfavorite.php' method = 'POST'>
-                                <input type = 'hidden' name = 'link' value = '6th.php'/>
-                                <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
-                        </form>
-
+				<form action = 'addfavorite.php' method = 'POST'>
+                    <input type = 'hidden' name = 'link' value = '6th.php'/>
+                    <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
+                </form>
 			</div>
-
 		</div>
-
-		</form>
 		
 		<div id = "footer">
 			Braden Wu | Last Updated: 03/10/2021

@@ -5,8 +5,8 @@
 	<meta charset = "UTF-8">
 	<meta name = "description" content = "UT Austin Guide">
 	<meta name = "author" content = "Braden Wu">
-    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    	<link href = "starter.css" rel = "stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href = "starter.css" rel = "stylesheet">
 	<link href = "location.css" rel = "stylesheet">
 	<script src="searchBar.js"></script>
 	<script src = "location.js" defer> </script>
@@ -29,23 +29,23 @@ print<<<page
 
 	<div id = "container">
 		<!-- includes: logo, banner -->
-                <div id = "top">
-                        <div id = "logo_set">
+        <div id = "top">
+            <div id = "logo_set">
 				<a href = "home.php" style="text-decoration:none; color:inherit;">
-                                <img id = "logo" src = "logo.png" alt = "UTag Logo">
-                                <p id = "utag">UTag</p>
-                                <p id = "phrase">University of Texas at Austin Guide</p>
-                        </div>
-                <img id = "banner" src = "home.jpg" alt = "UT Campus Image">
-                </div>
+                <img id = "logo" src = "logo.png" alt = "UTag Logo">
+                <p id = "utag">UTag</p>
+                <p id = "phrase">University of Texas at Austin Guide</p>
+            </div>
+        	<img id = "banner" src = "home.jpg" alt = "UT Campus Image">
+        </div>
 
 		<div id = "menu">		
 			<!-- even the odds functionality -->
 			<a href = "home.php">Home</a>
 			<div class = "dropdown">
 				<form class = "dropbutton" action = "activitiesList.php" method = "get">
-                                        <button>Activity Type</button>
-                                	</form>
+                    <button>Activity Type</button>
+            	</form>
 				<div class = "activitycontent">
 					<ul>
 						<li><a href = "outdoor.php">Outdoor Activities</a></li>
@@ -71,21 +71,19 @@ print<<<page
             </div>
 		</div>
 
-		<form>
-
 		<div id = "content">
 			<h1> Gregory Gym </h1>
 			<div class = "bigPic">
-				<img src = "greg1.jpg" id = "big" height = "400" width = "700">
+				<img src = "greg1.jpg" id = "big" alt="Image of Greg Gym" height = "400" width = "700">
 			</div>
 			<div class = "smallPic">
-				<img src = "greg2.jpg" id = "small1" height = "100" width = "150" onclick = "changeImage(event)">
+				<img src = "greg2.jpg" id = "small1" alt="Image of Greg Gym" height = "100" width = "150" onclick = "changeImage(event)">
 			</div>
 			<div class = "smallPic">
-				<img src = "greg3.jpg" id = "small2" height = "100" width = "150" onclick = "changeImage(event)">
+				<img src = "greg3.jpg" id = "small2" alt="Image of Greg Gym" height = "100" width = "150" onclick = "changeImage(event)">
 			</div>
 			<div class = "smallPic">
-				<img src = "greg4.jpg" id = "small3" height = "100" width = "150" onclick = "changeImage(event)">
+				<img src = "greg4.jpg" id = "small3" alt="Image of Greg Gym" height = "100" width = "150" onclick = "changeImage(event)">
 			</div>
 			<div class = "text">
 				<p> <strong> Location: </strong> <a href = "https://www.google.com/maps/place/Gregory+Gymnasium/@30.2842486,-97.7390299,17z/data=!3m1!4b1!4m5!3m4!1s0x8644b59bc0000001:0x65ba35ca765b4cd1!8m2!3d30.284244!4d-97.7368412"> 2101 Speedway St, Austin, TX 78712 </a> </p> 
@@ -97,16 +95,12 @@ print<<<page
 				<p> <strong> Our Rating: </strong> Highly Recommended! </p>
 				<p> </p>
 				<p> <strong> Tags: </strong> Sports </p>
-			<form action = 'addfavorite.php' method = 'POST'>
-                                <input type = 'hidden' name = 'link' value = '6th.php'/>
-                                <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
-                        </form>
-
+				<form action = 'addfavorite.php' method = 'POST'>
+                    <input type = 'hidden' name = 'link' value = '6th.php'/>
+                    <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
+                </form>
 			</div>
-
 		</div>
-
-		</form>
 		
 		<div id = "footer">
 			Braden Wu | Last Updated: 04/3/2021

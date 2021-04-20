@@ -29,23 +29,23 @@ print<<<page
 
 	<div id = "container">
 		<!-- includes: logo, banner -->
-                <div id = "top">
-                        <div id = "logo_set">
+        <div id = "top">
+            <div id = "logo_set">
 				<a href = "home.php" style="text-decoration:none; color:inherit;">
-                                <img id = "logo" src = "logo.png" alt = "UTag Logo">
-                                <p id = "utag">UTag</p>
-                                <p id = "phrase">University of Texas at Austin Guide</p>
-                        </div>
-                <img id = "banner" src = "home.jpg" alt = "UT Campus Image">
-                </div>
+                <img id = "logo" src = "logo.png" alt = "UTag Logo">
+                <p id = "utag">UTag</p>
+                <p id = "phrase">University of Texas at Austin Guide</p>
+            </div>
+            <img id = "banner" src = "home.jpg" alt = "UT Campus Image">
+        </div>
 
 		<div id = "menu">		
 			<!-- even the odds functionality -->
 			<a href = "home.php">Home</a>
 			<div class = "dropdown">
 				<form class = "dropbutton" action = "activitiesList.php" method = "get">
-                                        <button>Activity Type</button>
-                                	</form>
+                    <button>Activity Type</button>
+            	</form>
 				<div class = "activitycontent">
 					<ul>
 						<li><a href = "outdoor.php">Outdoor Activities</a></li>
@@ -71,21 +71,19 @@ print<<<page
             </div>
 		</div>
 
-		<form>
-
 		<div id = "content">
 			<h1> Perry Castaneda Library </h1>
 			<div class = "bigPic">
-				<img src = "pcl1.JPG" id = "big" height = "400" width = "700">
+				<img src = "pcl1.JPG" id = "big" alt="Image of PCL" height = "400" width = "700">
 			</div>
 			<div class = "smallPic">
-				<img src = "pcl2.jpg" id = "small1" height = "100" width = "150" onclick = "changeImage(event)">
+				<img src = "pcl2.jpg" id = "small1" alt="Image of PCL" height = "100" width = "150" onclick = "changeImage(event)">
 			</div>
 			<div class = "smallPic">
-				<img src = "pcl3.jpg" id = "small2" height = "100" width = "150" onclick = "changeImage(event)">
+				<img src = "pcl3.jpg" id = "small2" alt="Image of PCL" height = "100" width = "150" onclick = "changeImage(event)">
 			</div>
 			<div class = "smallPic">
-				<img src = "pcl4.JPG" id = "small3" height = "100" width = "150" onclick = "changeImage(event)">
+				<img src = "pcl4.JPG" id = "small3" alt="Image of PCL" height = "100" width = "150" onclick = "changeImage(event)">
 			</div>
 			<div class = "text">
 				<p> <strong> Location: </strong> <a href = "https://www.google.com/maps/place/Perry-Casta%C3%B1eda+Library/@30.2826621,-97.7403966,17z/data=!3m1!4b1!4m5!3m4!1s0x8644b59c6ae1bb7f:0xd251ac1bf2d1388e!8m2!3d30.2826575!4d-97.7382079"> 101 E 21st St, Austin, TX 78712 </a> </p> 
@@ -97,16 +95,14 @@ print<<<page
 				<p> <strong> Our Rating: </strong> Definitely Try It! </p>
 				<p> </p>
 				<p> <strong> Tags: </strong> Study Spots </p>
-			<form action = 'addfavorite.php' method = 'POST'>
-                                <input type = 'hidden' name = 'link' value = '6th.php'/>
-                                <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
-                        </form>
+				<form action = 'addfavorite.php' method = 'POST'>
+                    <input type = 'hidden' name = 'link' value = '6th.php'/>
+                    <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
+                </form>
 
 			</div>
 
 		</div>
-
-		</form>
 		
 		<div id = "footer">
 			Braden Wu | Last Updated: 03/10/2021
