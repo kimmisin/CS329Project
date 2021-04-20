@@ -14,6 +14,7 @@
 	<script src = "home.js"></script>
 </head>
 
+<body onload = "changeImage()" id = "body">
 <?php
 	if (isset($_COOKIE["color"])){
 		$value = $_COOKIE["color"];
@@ -24,7 +25,6 @@
 		}
 	}
 print<<<page
-<body onload = "changeImage()" id = "body">
 	<div id = "container">
 		<!-- includes: logo, banner -->
         <div id = "top">
