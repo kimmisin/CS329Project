@@ -38,8 +38,7 @@ print<<<page
         	<img id = "banner" src = "home.jpg" alt = "UT Campus Image">
         </div>
 
-		<div id = "menu">		
-			<!-- even the odds functionality -->
+		<div id = "menu">
 			<a href = "home.php">Home</a>
 			<div class = "dropdown">
 				<form class = "dropbutton" action = "activitiesList.php" method = "get">
@@ -65,7 +64,7 @@ print<<<page
 			<div id="searchbar">
             	<button id="searchButton" onclick="expandSearchBar();"><i id="icon" class="fa fa-search"></i></button>
                 <form id="searchForm" method="POST" action="search.php">
-                    <input id="searchbox" type="text" placeholder="search" >
+                    <input id="searchbox" name="searchbox" type="text" placeholder="search tag" >
                 </form>
             </div>
 		</div>
@@ -87,7 +86,7 @@ print<<<page
 				<div class = "text">
 					<h3> Monkey Nest Coffee </h3>
 					<p> Quirky coffee shop located 15 min from campus </p>
-					<p> <strong> Tags: </strong> Study Spots </p>
+					<p> <strong> Tags: </strong> Study Spots, Coffee </p>
 					<a href = "monkey.php"> Read More! </a>
 				</div>
 			</div>
@@ -97,7 +96,7 @@ print<<<page
 				<div class = "text">
 					<h3> Caffee Medici </h3>
 					<p> Popular coffee shop located next to UT on Guadaulpe </p>
-					<p> <strong> Tags: </strong> Study Spots </p>
+					<p> <strong> Tags: </strong> Study Spots, Coffee </p>
 					<a href = "medici.php"> Read More! </a>
 				</div>
 			</div>
@@ -117,7 +116,7 @@ print<<<page
 				<div class = "text">
 					<h3> Texas Union </h3>
 					<p> Like the FAC, the Union provides restaurants and study spaces for students. </p>
-					<p> <strong> Tags: </strong> Study Spots </p>
+					<p> <strong> Tags: </strong> Study Spots, Dining, Coffee </p>
 					<a href = "union.php"> Read More! </a>
 				</div>
 			</div>

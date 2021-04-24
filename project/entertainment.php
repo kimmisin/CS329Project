@@ -38,8 +38,7 @@ print<<<page
         	<img id = "banner" src = "home.jpg" alt = "UT Campus Image">
         </div>
 
-		<div id = "menu">		
-			<!-- even the odds functionality -->
+		<div id = "menu">
 			<a href = "home.php">Home</a>
 			<div class = "dropdown">
 				<form class = "dropbutton" action = "activitiesList.php" method = "get">
@@ -65,7 +64,7 @@ print<<<page
 			<div id="searchbar">
             	<button id="searchButton" onclick="expandSearchBar();"><i id="icon" class="fa fa-search"></i></button>
                 <form id="searchForm" method="POST" action="search.php">
-                    <input id="searchbox" type="text" placeholder="search" >
+                    <input id="searchbox" name="searchbox" type="text" placeholder="search tag" >
                 </form>
             </div>
 		</div>
@@ -77,7 +76,7 @@ print<<<page
 				<div class = "text">
 					<h3> Austin City Limits</h3>
 					<p> Annual Music Festival hosted within Zilker Park </p>
-					<p> <strong> Tags: </strong> Entertainment </p>
+					<p> <strong> Tags: </strong> Entertainment, Music </p>
 					<a href = "acl.php"> Read More! </a>
 				</div>
 			</div>
@@ -87,7 +86,7 @@ print<<<page
 				<div class = "text">
 					<h3> South By Southwest </h3>
 					<p> Annual Media/Technology Conference hosted within Downtown Austin. </p>
-					<p> <strong> Tags: </strong> Entertainment </p>
+					<p> <strong> Tags: </strong> Entertainment, Film </p>
 					<a href = "sxsw.php"> Read More! </a>
 				</div>
 			</div>
@@ -97,7 +96,7 @@ print<<<page
 				<div class = "text">
 					<h3> ZACH Theatre </h3>
 					<p> The ZACH Theatre is the oldest Theatre Group in Texas </p>
-					<p> <strong> Tags: </strong> Entertainment </p>
+					<p> <strong> Tags: </strong> Entertainment, Theatre </p>
 					<a href = "zach.php"> Read More! </a>
 				</div>
 			</div>
@@ -107,7 +106,7 @@ print<<<page
 				<div class = "text">
 					<h3> The Long Center for Performing Arts </h3>
 					<p> A well renown and popular performing arts venue located right on the Colorado River. </p>
-					<p> <strong> Tags: </strong> Entertainment </p>
+					<p> <strong> Tags: </strong> Entertainment, Music, Theatre </p>
 					<a href = "long.php"> Read More! </a>
 				</div>
 			</div>
@@ -117,7 +116,7 @@ print<<<page
 				<div class = "text">
 					<h3> 6th Street </h3>
 					<p> 6th Street is the lively home of Austin's Nightlife </p>
-					<p> <strong> Tags: </strong> Entertainment </p>
+					<p> <strong> Tags: </strong> Entertainment, Dining, Music </p>
 					<a href = "6th.php"> Read More! </a>
 				</div>
 			</div>

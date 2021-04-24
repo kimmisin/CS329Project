@@ -4,14 +4,13 @@
 	<title> ZACH Theatre </title>
 	<meta charset = "UTF-8">
 	<meta name = "description" content = "UT Austin Guide">
-	<meta name = "author" content = "Braden Wu">
-    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    	<link href = "starter.css" rel = "stylesheet">
+	<meta name = "author" content = "Braden Wu and Kimmi Sin">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href = "starter.css" rel = "stylesheet">
 	<link href = "location.css" rel = "stylesheet">
 	<script src="searchBar.js"></script>
 	<script src = "location.js" defer> </script>
 	<script src = "colors.js"></script>
-	<script src = "eventheodds.js"></script>
 </head>
 
 <body id = "body">
@@ -40,8 +39,7 @@ print<<<page
 	        <img id = "banner" src = "home.jpg" alt = "UT Campus Image">
         </div>
 
-		<div id = "menu">		
-			<!-- even the odds functionality -->
+		<div id = "menu">
 			<a href = "home.php">Home</a>
 			<div class = "dropdown">
 				<form class = "dropbutton" action = "activitiesList.php" method = "get">
@@ -67,7 +65,7 @@ print<<<page
 			<div id="searchbar">
             	<button id="searchButton" onclick="expandSearchBar();"><i id="icon" class="fa fa-search"></i></button>
                 <form id="searchForm" method="POST" action="search.php">
-                    <input id="searchbox" type="text" placeholder="search" >
+                    <input id="searchbox" name="searchbox" type="text" placeholder="search tag" >
                 </form>
             </div>
 		</div>
@@ -95,7 +93,7 @@ print<<<page
 				<p> </p>
 				<p> <strong> Our Rating: </strong> Do it! </p>
 				<p> </p>
-				<p> <strong> Tags: </strong> Entertainment</p>
+				<p> <strong> Tags: </strong> Entertainment, Theatre </p>
 				<form action = 'addfavorite.php' method = 'POST'>
 	                <input type = 'hidden' name = 'link' value = '6th.php'/>
 	                <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
@@ -104,7 +102,7 @@ print<<<page
 		</div>
 		
 		<div id = "footer">
-			Braden Wu | Last Updated: 03/10/2021
+			Braden Wu | Kimmi Sin | Last Updated: 04/24/2021
 		</div>
 	</div>
 

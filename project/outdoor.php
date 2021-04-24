@@ -40,8 +40,7 @@ print<<<page
         	<img id = "banner" src = "home.jpg" alt = "UT Campus Image">
         </div>
 
-		<div id = "menu">		
-			<!-- even the odds functionality -->
+		<div id = "menu">
 			<a href = "home.php">Home</a>
 			<div class = "dropdown">
 				<form class = "dropbutton" action = "activitiesList.php" method = "get">
@@ -67,7 +66,7 @@ print<<<page
 			<div id="searchbar">
             	<button id="searchButton" onclick="expandSearchBar();"><i id="icon" class="fa fa-search"></i></button>
                 <form id="searchForm" method="POST" action="search.php">
-                    <input id="searchbox" type="text" placeholder="search" >
+                    <input id="searchbox" name="searchbox" type="text" placeholder="search tag" >
                 </form>
             </div>
 		</div>
@@ -79,7 +78,7 @@ print<<<page
 				<div class = "text">
 					<h3> Krause Springs </h3>
 					<p> Camping and Swimming site </p>
-					<p> <strong> Tags: </strong> Outdoors </p>
+					<p> <strong> Tags: </strong> Outdoors, Camping, Swimming, Hot Springs, Hiking, Nature, Picnic </p>
 					<a href = "krause.php"> Read More! </a>
 				</div>
 			</div>
@@ -89,7 +88,7 @@ print<<<page
 				<div class = "text">
 					<h3> Mayfield Park and Preserve </h3>
 					<p> Botannic garden, Peacock, Koi fish viewing, and Hiking trails </p>
-					<p> <strong> Tags: </strong> Outdoors </p>
+					<p> <strong> Tags: </strong> Outdoors, Hiking, Nature, Picnic </p>
 					<a href = "mayfield.php"> Read More! </a>
 				</div>
 			</div>
@@ -99,7 +98,7 @@ print<<<page
 				<div class = "text">
 					<h3> Zilker Park </h3>
 					<p> Hiking, Frisbee, Pinic, and Biking site </p>
-					<p> <strong> Tags: </strong> Outdoors </p>
+					<p> <strong> Tags: </strong> Outdoors, Hiking, Swimming, Camping, Waterfalls, Picnic, Nature, Running </p>
 					<a href = "zilker.php"> Read More! </a>
 				</div>
 			</div>
@@ -109,7 +108,7 @@ print<<<page
 				<div class = "text">
 					<h3> Lake Travis Waterloo Adventures </h3>
 					<p> Floating Water Park with an Obstacle Courses, Lounges, and Pinic areas </p>
-					<p> <strong> Tags: </strong> Outdoors </p>
+					<p> <strong> Tags: </strong> Outdoors, Sports, Swimming, Picnic </p>
 					<a href = "waterloo.php"> Read More! </a>
 				</div>
 			</div>
@@ -119,7 +118,7 @@ print<<<page
 				<div class = "text">
 					<h3> McKinney Falls State Park </h3>
 					<p> Camping, Fishing, Hiking, Pinic, Geocaching, Biking, and Swimming site </p>
-					<p> <strong> Tags: </strong> Outdoors </p>
+					<p> <strong> Tags: </strong> Outdoors, Hiking, Swimming, Camping, Waterfalls, Nature, Picnic, Running </p>
 					<a href = "mckinney.php"> Read More! </a>
 				</div>
 			</div>

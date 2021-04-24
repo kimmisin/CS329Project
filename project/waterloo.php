@@ -40,8 +40,7 @@ print<<<page
 	        <img id = "banner" src = "home.jpg" alt = "UT Campus Image">
         </div>
 
-		<div id = "menu">		
-			<!-- even the odds functionality -->
+		<div id = "menu">
 			<a href = "home.php">Home</a>
 			<div class = "dropdown">
 				<form class = "dropbutton" action = "activitiesList.php" method = "get">
@@ -67,7 +66,7 @@ print<<<page
 			<div id="searchbar">
             	<button id="searchButton" onclick="expandSearchBar();"><i id="icon" class="fa fa-search"></i></button>
                 <form id="searchForm" method="POST" action="search.php">
-                    <input id="searchbox" type="text" placeholder="search" >
+                    <input id="searchbox" name="searchbox" type="text" placeholder="search tag" >
                 </form>
             </div>
 		</div>
@@ -91,11 +90,11 @@ print<<<page
 				<p> </p>
 				<p> <strong> What is it?: </strong> Waterloo Adventures is a floating water park found right here on Lake Travis. Guaranteed fun for all ages!</p>
 				<p> </p>
-				<p> <strong> Things to do: </strong> Swimming, Pinic, Water Sports </p>
+				<p> <strong> Things to do: </strong> Swimming, Picnic, Water Sports </p>
 				<p> </p>
 				<p> <strong> Our Rating: </strong> Highly Recommended! </p>
 				<p> </p>
-				<p> <strong> Tags: </strong> Outdoors</p>
+				<p> <strong> Tags: </strong> Outdoors, Sports, Swimming, Picnic </p>
 			
 				<form action = 'addfavorite.php' method = 'POST'>
 	                    <input type = 'hidden' name = 'link' value = '6th.php'/>
@@ -106,7 +105,7 @@ print<<<page
 		</div>
 
 		<div id = "footer">
-			Braden Wu | Last Updated: 03/31/2021
+			Braden Wu | Kimmi Sin | Last Updated: 04/24/2021
 		</div>
 	</div>
 

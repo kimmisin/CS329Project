@@ -4,7 +4,7 @@
 	<title> Gregory Gym </title>
 	<meta charset = "UTF-8">
 	<meta name = "description" content = "UT Austin Guide">
-	<meta name = "author" content = "Braden Wu">
+	<meta name = "author" content = "Braden Wu and Kimmi Sin">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href = "starter.css" rel = "stylesheet">
 	<link href = "location.css" rel = "stylesheet">
@@ -40,8 +40,7 @@ print<<<page
         	<img id = "banner" src = "home.jpg" alt = "UT Campus Image">
         </div>
 
-		<div id = "menu">		
-			<!-- even the odds functionality -->
+		<div id = "menu">
 			<a href = "home.php">Home</a>
 			<div class = "dropdown">
 				<form class = "dropbutton" action = "activitiesList.php" method = "get">
@@ -67,7 +66,7 @@ print<<<page
 			<div id="searchbar">
             	<button id="searchButton" onclick="expandSearchBar();"><i id="icon" class="fa fa-search"></i></button>
                 <form id="searchForm" method="POST" action="search.php">
-                    <input id="searchbox" type="text" placeholder="search" >
+                    <input id="searchbox" name="searchbox" type="text" placeholder="search tag" >
                 </form>
             </div>
 		</div>
@@ -91,11 +90,11 @@ print<<<page
 				<p> </p>
 				<p> <strong> What is it?: </strong> Gregory Gym is UT's main gym. Whether it be basketball, running, volleyball, or dance, there is something for you to do at Greg!</p>
 				<p> </p>
-				<p> <strong> Things to do: </strong> Weight Lifting, Running, Basketball, Volleyball, Running, Dance </p>
+				<p> <strong> Things to do: </strong> Weight Lifting, Running, Basketball, Volleyball, Dance </p>
 				<p> </p>
 				<p> <strong> Our Rating: </strong> Highly Recommended! </p>
 				<p> </p>
-				<p> <strong> Tags: </strong> Sports </p>
+				<p> <strong> Tags: </strong> Sports, Weight Lifting, Running, Basketball, Volleyball, Dance, Swimming </p>
 				<form action = 'addfavorite.php' method = 'POST'>
                     <input type = 'hidden' name = 'link' value = '6th.php'/>
                     <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
@@ -104,7 +103,7 @@ print<<<page
 		</div>
 		
 		<div id = "footer">
-			Braden Wu | Last Updated: 04/3/2021
+			Braden Wu | Kimmi Sin | Last Updated: 04/24/2021
 		</div>
 	</div>
 
