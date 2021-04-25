@@ -15,17 +15,7 @@
 </head>
 
 <body onload = "changeImage()" id = "body">
-<?php
-	if (isset($_COOKIE["color"])){
-		$value = $_COOKIE["color"];
-		if ($value == "Night Mode"){
-			echo "<script> setNight(); </script>";
-		}else{
-			echo "<script> setDay(); </script>";		
-		}
-	}
-print<<<page
-	<div id = "container">
+<div id = "container">
 		<!-- includes: logo, banner -->
         <div id = "top">
             <div id = "logo_set">
@@ -68,6 +58,33 @@ print<<<page
 		</div>
 
 		<div id = "content">
+<?php
+	if (isset($_COOKIE["color"])){
+		$value = $_COOKIE["color"];
+		if ($value == "Night Mode"){
+			echo "<script> setNight(); </script>";
+		}else{
+			echo "<script> setDay(); </script>";		
+		}
+	}
+	
+	if (isset($_COOKIE["text"])){
+		$value = $_COOKIE["text"];
+		if ($value == "black"){
+			echo "<script> textBlack(); </script>";
+		}else if ($value == "white"){
+			echo "<script> textWhite(); </script>";		
+		}else if ($value == "red"){
+			echo "<script> textRed(); </script>";		
+		}else if ($value == "blue"){
+			echo "<script> textBlue(); </script>";		
+		}else{
+			echo "<script> textOrange(); </script>";		
+		}
+	}
+
+print<<<page
+	
 			<div id = "intro">
 				<h1> Discover Austin </h1>
 				<p> The ultimate guide for UT students to find hot spots for every activity type. Keep up to date with the newest attractions for friend gatherings, study dates, sport days, and much more! </p>
