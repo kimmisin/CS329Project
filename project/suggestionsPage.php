@@ -15,20 +15,6 @@
 </head>
 
 <body id = "body">
-<?php
-	error_reporting(E_ALL);
-	ini_set("display_errors", "on");
-	
-	// color mode
-	if (isset($_COOKIE["color"])){
-		$value = $_COOKIE["color"];
-		if ($value == "Night Mode"){
-			echo "<script> setNight(); </script>";
-		}else{
-			echo "<script> setDay(); </script>";		
-		}
-	}
-?>
 	<div id = "container">
 		<!-- includes: logo, banner -->
         <div id = "top">
@@ -84,6 +70,36 @@
 		</div>
 
 		<div id = "content">
+<?php
+	error_reporting(E_ALL);
+	ini_set("display_errors", "on");
+	
+	// color mode
+	if (isset($_COOKIE["color"])){
+		$value = $_COOKIE["color"];
+		if ($value == "Night Mode"){
+			echo "<script> setNight(); </script>";
+		}else{
+			echo "<script> setDay(); </script>";		
+		}
+	}
+
+	if (isset($_COOKIE["text"])){
+		$value = $_COOKIE["text"];
+		if ($value == "black"){
+			echo "<script> textBlack(); </script>";
+		}else if ($value == "white"){
+			echo "<script> textWhite(); </script>";		
+		}else if ($value == "red"){
+			echo "<script> textRed(); </script>";		
+		}else if ($value == "blue"){
+			echo "<script> textBlue(); </script>";		
+		}else{
+			echo "<script> textOrange(); </script>";		
+		}
+	}
+
+?>
 			<h1> Help Improve Our Website </h1>
 			<p> 
 				Fill out the survey form below to aid in the future development of this site. Your input will guide the site's focus on displaying specific activity types and create a more user friendly environment.

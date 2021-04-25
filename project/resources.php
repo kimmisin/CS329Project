@@ -15,18 +15,6 @@
 
 <body id = "body">
 
-<?php
-	if (isset($_COOKIE["color"])){
-		$value = $_COOKIE["color"];
-		if ($value == "Night Mode"){
-			echo "<script> setNight(); </script>";
-		}else{
-			echo "<script> setDay(); </script>";		
-		}
-	}
-
-print<<<page
-
 	<div id = "container">
 		<!-- includes: logo, banner -->
         <div id = "top">
@@ -73,6 +61,34 @@ print<<<page
 		</div>
 
 		<div id = "content">
+
+<?php
+	if (isset($_COOKIE["color"])){
+		$value = $_COOKIE["color"];
+		if ($value == "Night Mode"){
+			echo "<script> setNight(); </script>";
+		}else{
+			echo "<script> setDay(); </script>";		
+		}
+	}
+
+	if (isset($_COOKIE["text"])){
+		$value = $_COOKIE["text"];
+		if ($value == "black"){
+			echo "<script> textBlack(); </script>";
+		}else if ($value == "white"){
+			echo "<script> textWhite(); </script>";		
+		}else if ($value == "red"){
+			echo "<script> textRed(); </script>";		
+		}else if ($value == "blue"){
+			echo "<script> textBlue(); </script>";		
+		}else{
+			echo "<script> textOrange(); </script>";		
+		}
+	}
+
+
+print<<<page
 			<h1> UT Student Resources </h1>
 			<p> Find commonly used UT sites and resources linked below.</p>
 			<p> 

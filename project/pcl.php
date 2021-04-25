@@ -15,17 +15,6 @@
 </head>
 
 <body id = "body">
-<?php
-	if (isset($_COOKIE["color"])){
-		$value = $_COOKIE["color"];
-		if ($value == "Night Mode"){
-			echo "<script> setNight(); </script>";
-		}else{
-			echo "<script> setDay(); </script>";		
-		}
-	}
-
-print<<<page
 
 	<div id = "container">
 		<!-- includes: logo, banner -->
@@ -72,6 +61,33 @@ print<<<page
 		</div>
 
 		<div id = "content">
+<?php
+	if (isset($_COOKIE["color"])){
+		$value = $_COOKIE["color"];
+		if ($value == "Night Mode"){
+			echo "<script> setNight(); </script>";
+		}else{
+			echo "<script> setDay(); </script>";		
+		}
+	}
+
+	if (isset($_COOKIE["text"])){
+		$value = $_COOKIE["text"];
+		if ($value == "black"){
+			echo "<script> textBlack(); </script>";
+		}else if ($value == "white"){
+			echo "<script> textWhite(); </script>";		
+		}else if ($value == "red"){
+			echo "<script> textRed(); </script>";		
+		}else if ($value == "blue"){
+			echo "<script> textBlue(); </script>";		
+		}else{
+			echo "<script> textOrange(); </script>";		
+		}
+	}
+
+
+print<<<page
 			<h1> Perry Castaneda Library </h1>
 			<div class = "bigPic">
 				<img src = "pcl1.JPG" id = "big" alt="Image of PCL" height = "400" width = "700">

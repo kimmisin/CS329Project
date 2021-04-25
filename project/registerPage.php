@@ -13,18 +13,6 @@
         <script src = "eventheodds.js"></script>
 	<script src = "register.php"></script>
 </head>
-
-<?php
-	if (isset($_COOKIE["color"])){
-		$value = $_COOKIE["color"];
-		if ($value == "Night Mode"){
-			echo "<script> setNight(); </script>";
-		}else{
-			echo "<script> setDay(); </script>";		
-		}
-	}
-?>
-
 <body id = "body">
     <div id = "container">
         <!-- includes: logo, banner -->
@@ -72,6 +60,34 @@
         </div>
         
 		<div id = "content">
+
+<?php
+	if (isset($_COOKIE["color"])){
+		$value = $_COOKIE["color"];
+		if ($value == "Night Mode"){
+			echo "<script> setNight(); </script>";
+		}else{
+			echo "<script> setDay(); </script>";		
+		}
+	}
+	
+	if (isset($_COOKIE["text"])){
+		$value = $_COOKIE["text"];
+		if ($value == "black"){
+			echo "<script> textBlack(); </script>";
+		}else if ($value == "white"){
+			echo "<script> textWhite(); </script>";		
+		}else if ($value == "red"){
+			echo "<script> textRed(); </script>";		
+		}else if ($value == "blue"){
+			echo "<script> textBlue(); </script>";		
+		}else{
+			echo "<script> textOrange(); </script>";		
+		}
+	}
+
+?>
+
 			<h1>Register</h1>
 			<form action = "register.php" method = "post">
 				<p>Username: <input type = 'text' name = 'newusername' size = '15'></p>
