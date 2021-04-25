@@ -88,6 +88,12 @@
 
 print<<<page
             <h1> About Us </h1>
+	    	<div class = "video">
+			<video class = "vid" height = "400" width = "700" controls>
+				<source src = "UTaG.mp4">
+			</video>
+	 	</div>
+		<p> Video Credits: AndrewG I Background Music for Videos, Business Insider, TAPP Channel, and The University of Texas at Austin. </p>
             <p>Learn more about the creators of the ultimate Austin guide for UT students. All are current students studying at UT.</p>
             <br>
             <hr>

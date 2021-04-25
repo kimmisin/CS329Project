@@ -24,3 +24,14 @@
 hr {
 	border: 2px solid darksalmon;
 }
+
+.video{
+	border-left: 125px solid transparent;
+	width: 700px;
+	height: 400px;
+	text-align: center;
+}
+
+.vid{
+	object-fit: cover;
+}
