@@ -19,8 +19,18 @@
 	ini_set("display_errors", "on");
 
 	if (isset($_POST["colorSettings"])){
-		$mode =  $_POST["colorMode"];
+		if (isset($_POST["colorMode"])){
+			$mode = $_POST["colorMode"];
+		}else{
+			$mode = "Day Mode";
+		}
+		if (isset($_POST["textColor"])){
+			$color = $_POST["textColor"];
+		}else{
+			$color = "black";
+		}
 		setcookie("color", $mode, time() + 3600, "/");
+		setcookie("text", $color, time() + 3600, "/");
 		setcookie("updated", "yes", time() + 1, "/");
 		Header('Location: '.$_SERVER['PHP_SELF']);
 	}else if (isset($_COOKIE["updated"])){
@@ -28,9 +38,7 @@
 	}else{
 		defaultPage();
 	}
-
 	
-
 	if (isset($_COOKIE["color"])){
 		$value = $_COOKIE["color"];
 		if ($value == "Night Mode"){
@@ -40,6 +48,20 @@
 		}
 	}
 
+	if (isset($_COOKIE["text"])){
+		$value = $_COOKIE["text"];
+		if ($value == "black"){
+			echo "<script> textBlack(); </script>";
+		}else if ($value == "white"){
+			echo "<script> textWhite(); </script>";		
+		}else if ($value == "red"){
+			echo "<script> textRed(); </script>";		
+		}else if ($value == "blue"){
+			echo "<script> textBlue(); </script>";		
+		}else{
+			echo "<script> textOrange(); </script>";		
+		}
+	}
 	
 function defaultPage(){
 
@@ -92,10 +114,19 @@ print<<<page
 		<div id = "content">	
 			<h1> Page Customization </h1>
 			<form id = "customization" method = "POST" action = "color.php">
-				<label> <strong> Page Color Setting </strong> </label>
+				<label> <strong> Page Color Setting: </strong> </label>
 				<br>
-				<input type = "radio" name = "colorMode" value = "Night Mode"> Night Mode
-				<input type = "radio" name = "colorMode" value = "Day Mode"> Day Mode
+					<input type = "radio" name = "colorMode" value = "Night Mode"> Night Mode
+					<input type = "radio" name = "colorMode" value = "Day Mode"> Day Mode
+				<br>
+				<br>
+				<label> <strong> Text Color Setting: </strong> </label>
+				<br>
+					<input type = "radio" name = "textColor" value = "black"> Black
+					<input type = "radio" name = "textColor" value = "white"> White
+					<input type = "radio" name = "textColor" value = "red"> Red
+					<input type = "radio" name = "textColor" value = "blue"> Blue
+					<input type = "radio" name = "textColor" value = "orange"> Orange
 				<br>
 				<input type = "submit" name = "colorSettings" value = "Change Settings">
 			</form>

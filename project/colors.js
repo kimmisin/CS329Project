@@ -42,4 +42,29 @@ function setDay(){
 function setNight(){
 	console.log("night");
 	document.getElementById("body").style.backgroundColor = "rgb(" + 115 + "," + 115 + "," + 115 + ")";
+}
+
+function textBlack(){
+	console.log("black");
+	document.getElementById("content").style.color = "black";
+}
+
+function textWhite(){
+	console.log("white");
+	document.getElementById("content").style.color = "white";
 }	
+
+function textRed(){
+	console.log("red");
+	document.getElementById("content").style.color = "red";
+}
+
+function textBlue(){
+	console.log("blue");
+	document.getElementById("content").style.color = "blue";
+}
+
+function textOrange(){
+	console.log("orange");
+	document.getElementById("content").style.color = "orange";
+}

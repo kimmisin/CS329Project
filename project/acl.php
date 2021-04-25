@@ -73,7 +73,7 @@ print<<<page
 		<div id = "content">
 			<h1> Austin City Limits </h1>
 			<div class = "bigPic">
-				<img src = "acl1.jpg" id = "big" alt="Image of ACL" height = "400" width = "700">
+				<img src = "acl1.jpg" id = "big" alt = "Image of ACL" height = "400" width = "700">
 			</div>
 			<div class = "smallPic">
 				<img src = "acl2.jpg" id = "small1" alt="Image of ACL" height = "100" width = "150" onclick = "changeImage(event)">
