@@ -92,7 +92,7 @@ print<<<page
 
 			<div class  = "slideshow">
 				<a id = "slidelink" href = "franklins.php">
-					<img id= "slideimage" src = "franklins1.jpg" alt = "franklins">
+					<img id= "slideimage" src = "franklins1.jpg" alt = "Image">
 				</a>
 				<a class = "readmore" href = "franklins.php" id="slidecaption" >Franklins BBQ</a>
              </div>
@@ -133,7 +133,7 @@ print<<<page
 
 				<div class = "smallPic">
 					<a href = "mckinney.php">
-						<img src = "https://tpwd.texas.gov/state-parks/mckinney-falls/gallery/lower-mckinney-falls.jpg" alt = "McKinney Falls State Park">
+						<img src = "mckinney1.jpg" alt = "McKinney Falls State Park">
 					</a>
 					<div class = "text">
 						<h3> McKinney Falls State Park </h3>
@@ -147,7 +147,7 @@ print<<<page
 		</div>
 
 		<div id = "footer">
-			Braden Wu | Brinnah Welmaker | Kimmi Sin | Last Updated: 04/19/2021
+			Braden Wu | Brinnah Welmaker | Kimmi Sin | Last Updated: 04/25/2021
 		</div>
 
 </body>

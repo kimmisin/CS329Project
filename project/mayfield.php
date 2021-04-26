@@ -114,7 +114,7 @@ print<<<page
 				<p> </p>
 				<p> <strong> Tags: </strong> Outdoors, Hiking, Nature, Picnic </p>
 				<form action = 'addfavorite.php' method = 'POST'>
-                    <input type = 'hidden' name = 'link' value = '6th.php'/>
+                    <input type = 'hidden' name = 'link' value = 'mayfield.php'/>
                     <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
                 </form>
 			</div>
