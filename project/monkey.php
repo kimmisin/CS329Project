@@ -113,7 +113,9 @@ print<<<page
 				<p> <strong> Tags: </strong> Study Spots, Coffee </p>
 				<form action = 'addfavorite.php' method = 'POST'>
                     <input type = 'hidden' name = 'link' value = 'monkey.php'/>
-                    <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
+			<input type = 'hidden' name = 'title' value = 'Monkey Nest Coffee'/>
+                        <input type = 'hidden' name = 'image' value = 'monkey1.jpg'/>		
+    <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
                 </form>
 			</div>
 		</div>

@@ -112,7 +112,9 @@ print<<<page
 				<p> </p>
 				<p> <strong> Tags: </strong> Study Spots </p>
 				<form action = 'addfavorite.php' method = 'POST'>
-                    <input type = 'hidden' name = 'link' value = 'fac.php'/>
+		    <input type = 'hidden' name = 'link' value = 'fac.php'/>
+<input type = 'hidden' name = 'title' value = 'Flawn Academic Center'/>
+                                <input type = 'hidden' name = 'image' value = 'fac1.jpg'/>
                     <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
                 </form>
 			</div>

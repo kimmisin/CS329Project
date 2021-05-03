@@ -114,7 +114,9 @@ print<<<page
 				<p> <strong> Tags: </strong> Sports, Basketball, Volleyball, Music </p>
 				
 				<form action = 'addfavorite.php' method = 'POST'>
-                    <input type = 'hidden' name = 'link' value = 'fec.php'/>
+		    <input type = 'hidden' name = 'link' value = 'fec.php'/>
+			<input type = 'hidden' name = 'title' value = 'Frank Erwin Center'/>
+                                <input type = 'hidden' name = 'image' value = 'fec1.jpg'/>
                     <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
                 </form>
 			</div>

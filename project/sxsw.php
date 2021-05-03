@@ -113,7 +113,9 @@ print<<<page
 				<p> <strong> Tags: </strong> Entertainment, Film </p>
 
 				<form action = 'addfavorite.php' method = 'POST'>
-	                <input type = 'hidden' name = 'link' value = 'sxsw.php'/>
+			<input type = 'hidden' name = 'link' value = 'sxsw.php'/>
+				<input type = 'hidden' name = 'title' value = 'South by Southwest'/>
+                        <input type = 'hidden' name = 'image' value = 'sxsw1.jpg'/>
 	                <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
 	            </form>
 			</div>

@@ -112,7 +112,9 @@ print<<<page
 				<p> </p>
 				<p> <strong> Tags: </strong> Indoors, Museum, Nature </p>
 				<form action = 'addfavorite.php' method = 'POST'>
-                    <input type = 'hidden' name = 'link' value = 'capitol.php'/>
+		    <input type = 'hidden' name = 'link' value = 'capitol.php'/>
+			<input type = 'hidden' name = 'title' value = 'Texas State Capitol'/>
+                                <input type = 'hidden' name = 'image' value = 'capitol1.jpg'/>
                     <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
                 </form>
 			</div>

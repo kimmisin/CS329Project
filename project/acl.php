@@ -111,7 +111,9 @@ print<<<page
 				<p> </p>
 				<p> <strong> Tags: </strong> Entertainment, Music </p>
 				<form action = 'addfavorite.php' method = 'POST'>
-                    			<input type = 'hidden' name = 'link' value = 'acl.php'/>
+					<input type = 'hidden' name = 'link' value = 'acl.php'/>
+					<input type = 'hidden' name = 'title' value = 'Austin City Limits'/>
+                                	<input type = 'hidden' name = 'image' value = 'acl1.jpg'/>
                    			<input type = 'submit' name = 'submit' value = "Add to Favorites"/>
                 		</form>
 			</div>

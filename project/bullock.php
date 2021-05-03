@@ -113,7 +113,9 @@ print<<<page
 				<p> <strong> Tags: </strong> Indoors, Museum, Theatre </p>
 			
 				<form action = 'addfavorite.php' method = 'POST'>
-                    <input type = 'hidden' name = 'link' value = 'bullock.php'/>
+		    <input type = 'hidden' name = 'link' value = 'bullock.php'/>
+			<input type = 'hidden' name = 'title' value = 'Bullock Texas State History Museum'/>
+                                <input type = 'hidden' name = 'image' value = 'bullock1.jpg'/>
                     <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
                 </form>
 			</div>

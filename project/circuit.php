@@ -112,7 +112,9 @@ print<<<page
 				<p> </p>
 				<p> <strong> Tags: </strong> Sports, Racing </p>
 				<form action = 'addfavorite.php' method = 'POST'>
-                    <input type = 'hidden' name = 'link' value = 'circuit.php'/>
+		    <input type = 'hidden' name = 'link' value = 'circuit.php'/>
+			<input type = 'hidden' name = 'title' value = 'Circuit of the Americas'/>
+                                <input type = 'hidden' name = 'image' value = 'circuit1.jpg'/>
                     <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
                 </form>
 			</div>

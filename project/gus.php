@@ -111,7 +111,9 @@ print<<<page
 				<p> </p>
 				<p> <strong> Tags: </strong> Dining </p>
 				<form action = 'addfavorite.php' method = 'POST'>
-                    <input type = 'hidden' name = 'link' value = 'gus.php'/>
+		    <input type = 'hidden' name = 'link' value = 'gus.php'/>
+			<input type = 'hidden' name = 'title' value = 'Gus's World Famous Fried Chicken'/>
+                        <input type = 'hidden' name = 'image' value = 'gus1.jpg'/>
                     <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
                 </form>
 			</div>

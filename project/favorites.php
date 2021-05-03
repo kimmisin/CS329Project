@@ -7,7 +7,7 @@
         <meta name = "author" content = "Brinnah Welmaker">
         <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href = "starter.css" rel = "stylesheet">
-        <link href = "about.css" rel = "stylesheet">
+        <link href = "locationList.css"  rel = "stylesheet">
         <script src = "colors.js"></script>
         <script src="searchBar.js"></script>
         <script src = "eventheodds.js"></script>
@@ -23,6 +23,10 @@
 		}else{
 			echo "<script> setDay(); </script>";		
 		}
+	}
+
+	if (!isset($_COOKIE["username"])){
+		header("Location:login.php");
 	}
 
 print<<<page
@@ -65,18 +69,55 @@ print<<<page
             <div id="searchbar">
                 <button id="searchButton" onclick="expandSearchBar();"><i id="icon" class="fa fa-search"></i></button>
                 <form id="searchForm" method="POST" action="search.php">
-                    <input id="searchbox" name="searchbox" type="text" placeholder="search tag" >
+                    <input id="searchbox" type="text" placeholder="search" >
                 </form>
             </div>
         </div>
 
 		<div id = "content">
 			<h1>Welcome to your favorite places!</h1>
-			<h3> The functionality of seeing your favorites and adding to favorites to your account will be done next sprint using MySQL.</h3>
+page;
+	$server = "spring-2021.cs.utexas.edu";
+	$user = "cs329e_bulko_brinnahw";
+	$pass = "ballet8nose5mere";
+	$database = "cs329e_bulko_brinnahw";
+	$mysqli = new mysqli ($server, $user, $pass, $database);
+        if ($mysqli->connect_errno) {
+        	die('Connect Error: ' . $mysqli->connect_errno . ":" . $mysqli->connect_error);
+	}
+
+	$username = $_COOKIE['username'];
+
+	$command = "SELECT * FROM favorites WHERE username = '$username'";
+        $result = $mysqli->query($command);
+
+
+        if (mysqli_num_rows($result)==0){
+                echo "<p>No favorites added.</p>";
+        }else{
+		while ($row = $result->fetch_assoc()){
+			echo "<div class = 'activity'>";
+			echo "<img src = " . $row['image'] . " alt = favorite image>";
+
+			echo "<div class = 'text'>";
+			echo "<h3>" . $row['title'] . "</h3>" ; 
+			echo "<a href = " . $row['favorite'] . "> Read More! </a><br>";
+			echo "<br>";
+			echo "<form action = 'removefavorite.php' method = 'POST'>";
+			echo "<input type = 'hidden' name = 'link' value = " . $row['favorite'] . "'/>";
+			echo "<input type = 'submit' name = 'submit' value = 'Remove from Favorites'/>";
+			echo "</form></div></div>";
+
+			echo "</body>";
+                }
+        }
+
+
+print<<<page
 		</div>
         <hr>
         <div id = "footer">
-            Brinnah Welmaker | Last Updated: 04/18/2021
+            Brinnah Welmaker | Last Updated: 05/03/2021
         </div>
     </div>
 </body>

@@ -112,7 +112,9 @@ print<<<page
 				<p> </p>
 				<p> <strong> Tags: </strong> Study Spots, Dining, Coffee </p>
 				<form action = 'addfavorite.php' method = 'POST'>
-	                    <input type = 'hidden' name = 'link' value = 'union.php'/>
+			    <input type = 'hidden' name = 'link' value = 'union.php'/>
+				<input type = 'hidden' name = 'title' value = 'Texas Union'/>
+                        <input type = 'hidden' name = 'image' value = 'union1.jpg'/>
 	                    <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
 	            </form>
 			</div>

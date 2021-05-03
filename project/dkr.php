@@ -112,7 +112,9 @@ print<<<page
 				<p> </p>
 				<p> <strong> Tags: </strong> Sports, Football </p>
 				<form action = 'addfavorite.php' method = 'POST'>
-                    <input type = 'hidden' name = 'link' value = 'dkr.php'/>
+		    <input type = 'hidden' name = 'link' value = 'dkr.php'/>
+			<input type = 'hidden' name = 'title' value = 'Darrell K Royal Stadium'/>
+                                <input type = 'hidden' name = 'image' value = 'dkr1.jpg'/>
                     <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
                 </form>
 			</div>

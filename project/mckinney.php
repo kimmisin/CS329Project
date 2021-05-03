@@ -111,7 +111,9 @@ print<<<page
 				<p> </p>
 				<p> <strong> Tags: </strong> Outdoors, Hiking, Swimming, Camping, Waterfalls, Nature, Picnic, Running </p>
 				<form action = 'addfavorite.php' method = 'POST'>
-                    <input type = 'hidden' name = 'link' value = 'mckinney.php'/>
+		    <input type = 'hidden' name = 'link' value = 'mckinney.php'/>
+			<input type = 'hidden' name = 'title' value = 'McKinney Falls State Park'/>
+                        <input type = 'hidden' name = 'image' value = 'mckinney1.jpg'/>
                     <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
                 </form>
 			</div>

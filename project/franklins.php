@@ -113,7 +113,9 @@ print<<<page
 				<p> <strong> Tags: </strong> Dining </p>
 			
 				<form action = 'addfavorite.php' method = 'POST'>
-                    <input type = 'hidden' name = 'link' value = 'franklins.php'/>
+		    <input type = 'hidden' name = 'link' value = 'franklins.php'/>
+			<input type = 'hidden' name = 'title' value = "Franklin's BBQ"/>
+                                <input type = 'hidden' name = 'image' value = 'franklins1.jpg'/>
                     <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
                 </form>
 			</div>

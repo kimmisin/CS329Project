@@ -111,7 +111,9 @@ print<<<page
 				<p> </p>
 				<p> <strong> Tags: </strong> Sports, Rock Climbing, Bouldering </p>
 				<form action = 'addfavorite.php' method = 'POST'>
-                    <input type = 'hidden' name = 'link' value = 'bouldering.php'/>
+		    <input type = 'hidden' name = 'link' value = 'bouldering.php'/>
+			<input type = 'hidden' name = 'title' value = 'Austin Bouldering Project'/>
+                                <input type = 'hidden' name = 'image' value = 'bouldering1.jpg'/>
                     <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
                 </form>
 			</div>

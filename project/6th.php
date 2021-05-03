@@ -115,6 +115,8 @@ print<<<page
 			
 			<form action = 'addfavorite.php' method = 'POST'>
 				<input type = 'hidden' name = 'link' value = '6th.php'/>
+				<input type = 'hidden' name = 'title' value = '6th Street'/>
+				<input type = 'hidden' name = 'image' value = 'sixth1.jpg'/>
 				<input type = 'submit' name = 'submit' value = "Add to Favorites"/>
 			</form>
 			</div>
