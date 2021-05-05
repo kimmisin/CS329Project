@@ -48,3 +48,7 @@ input[type='submit']:hover {
 	background-color: #ff8c00;
 	color: white;
 }
+
+#favorite_status {
+	margin-top: 1vw;
+}

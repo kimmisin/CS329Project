@@ -12,6 +12,8 @@
 	<script src = "location.js" defer> </script>
 	<script src = "colors.js"></script>
 	<script src = "eventheodds.js"></script>
+	<script src = "jquery-3.6.0.js"></script>
+	<script src = "addfavorite.js"></script>
 </head>
 
 <body id = "body">
@@ -111,12 +113,13 @@ print<<<page
 				<p> <strong> Our Rating: </strong> Highly Recommended! </p>
 				<p> </p>
 				<p> <strong> Tags: </strong> Indoors, Museum </p>
-				<form action = 'addfavorite.php' method = 'POST'>
-			<input type = 'hidden' name = 'link' value = 'weird.php'/>
-			<input type = 'hidden' name = 'title' value = 'Museum of the Weird'/>
-                        <input type = 'hidden' name = 'image' value = 'weird1.jpg'/>
+				<form id='favoriteForm' method = 'POST'>
+					<input type = 'hidden' name = 'link' value = 'weird.php'/>
+					<input type = 'hidden' name = 'title' value = 'Museum of the Weird'/>
+                    <input type = 'hidden' name = 'image' value = 'weird1.jpg'/>
 	                <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
 	            </form>
+	            <div id='favorite_status'></div>
 			</div>
 		</div>
 		

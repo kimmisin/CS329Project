@@ -5,13 +5,15 @@
 	<meta charset = "UTF-8">
 	<meta name = "description" content = "UT Austin Guide">
 	<meta name = "author" content = "Braden Wu">
-    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    	<link href = "starter.css" rel = "stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href = "starter.css" rel = "stylesheet">
 	<link href = "location.css" rel = "stylesheet">
 	<script src="searchBar.js"></script>
 	<script src = "location.js" defer> </script>
 	<script src = "colors.js"></script>
 	<script src = "eventheodds.js"></script>
+	<script src = "jquery-3.6.0.js"></script>
+	<script src = "addfavorite.js"></script>
 </head>
 
 <body id = "body">
@@ -112,12 +114,13 @@ print<<<page
 				<p> <strong> Our Rating: </strong> Must Do! </p>
 				<p> </p>
 				<p> <strong> Tags: </strong> Indoors, Museum </p>
-				<form action = 'addfavorite.php' method = 'POST'>
-		    <input type = 'hidden' name = 'link' value = 'thinkery.php'/>
-			<input type = 'hidden' name = 'title' value = 'Thinkery'/>
-                        <input type = 'hidden' name = 'image' value = 'thinkery1.jpg'/>
+				<form id='favoriteForm' method = 'POST'>
+				    <input type = 'hidden' name = 'link' value = 'thinkery.php'/>
+					<input type = 'hidden' name = 'title' value = 'Thinkery'/>
+                    <input type = 'hidden' name = 'image' value = 'thinkery1.jpg'/>
                     <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
                 </form>
+                <div id='favorite_status'></div>
 			</div>
 		</div>
 		

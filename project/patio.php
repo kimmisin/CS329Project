@@ -12,6 +12,8 @@
 	<script src = "location.js" defer> </script>
 	<script src = "colors.js"></script>
 	<script src = "eventheodds.js"></script>
+	<script src = "jquery-3.6.0.js"></script>
+	<script src = "addfavorite.js"></script>
 </head>
 
 <body id = "body">
@@ -110,12 +112,13 @@ print<<<page
 				<p> <strong> Our Rating: </strong> Wonderful! </p>
 				<p> </p>
 				<p> <strong> Tags: </strong> Dining </p>
-				<form action = 'addfavorite.php' method = 'POST'>
-		    <input type = 'hidden' name = 'link' value = 'patio.php'/>
-			<input type = 'hidden' name = 'title' value = 'El Patio Mexican Food'/>
-                        <input type = 'hidden' name = 'image' value = 'patio1.jpg'/>
+				<form id='favoriteForm' method = 'POST'>
+				    <input type = 'hidden' name = 'link' value = 'patio.php'/>
+					<input type = 'hidden' name = 'title' value = 'El Patio Mexican Food'/>
+                    <input type = 'hidden' name = 'image' value = 'patio1.jpg'/>
                     <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
                 </form>
+                <div id='favorite_status'></div>
 			</div>
 		</div>
 		<div id = "footer">

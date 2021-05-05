@@ -12,6 +12,8 @@
 	<script src = "location.js" defer> </script>
 	<script src = "colors.js"></script>
 	<script src = "eventheodds.js"></script>
+	<script src = "jquery-3.6.0.js"></script>
+	<script src = "addfavorite.js"></script>
 </head>
 
 <body id = "body">
@@ -111,15 +113,14 @@ print<<<page
 				<p> <strong> Our Rating: </strong> Definitely Try It! </p>
 				<p> </p>
 				<p> <strong> Tags: </strong> Study Spots </p>
-				<form action = 'addfavorite.php' method = 'POST'>
-		    <input type = 'hidden' name = 'link' value = 'pcl.php'/>
-			<input type = 'hidden' name = 'title' value = 'Perry Castaneda Library'/>
-                        <input type = 'hidden' name = 'image' value = 'pcl2.jpg'/>
+				<form id='favoriteForm' method = 'POST'>
+				    <input type = 'hidden' name = 'link' value = 'pcl.php'/>
+					<input type = 'hidden' name = 'title' value = 'Perry Castaneda Library'/>
+                    <input type = 'hidden' name = 'image' value = 'pcl2.jpg'/>
                     <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
                 </form>
-
+                <div id='favorite_status'></div>
 			</div>
-
 		</div>
 		
 		<div id = "footer">

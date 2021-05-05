@@ -12,6 +12,8 @@
 	<script src = "location.js" defer> </script>
 	<script src = "colors.js"></script>
 	<script src = "eventheodds.js"></script>
+	<script src = "jquery-3.6.0.js"></script>
+	<script src = "addfavorite.js"></script>
 </head>
 
 <body id = "body">
@@ -112,13 +114,13 @@ print<<<page
 				<p> </p>
 				<p> <strong> Tags: </strong> Outdoors, Sports, Swimming, Picnic </p>
 			
-				<form action = 'addfavorite.php' method = 'POST'>
-			    <input type = 'hidden' name = 'link' value = 'waterloo.php'/>
-				<input type = 'hidden' name = 'title' value = 'Lake Travis Waterloo Adventures'/>
-                        <input type = 'hidden' name = 'image' value = 'waterloo1.jpg'/>
-	                    <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
+				<form id='favoriteForm' method = 'POST'>
+				    <input type = 'hidden' name = 'link' value = 'waterloo.php'/>
+					<input type = 'hidden' name = 'title' value = 'Lake Travis Waterloo Adventures'/>
+                    <input type = 'hidden' name = 'image' value = 'waterloo1.jpg'/>
+                    <input type = 'submit' name = 'submit' value = "Add to Favorites"/>
 	            </form>
-
+	            <div id='favorite_status'></div>
 			</div>
 		</div>
 

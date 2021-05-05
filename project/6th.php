@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href = "starter.css" rel = "stylesheet">
 	<link href = "location.css" rel = "stylesheet">
+	<script src="jquery-3.6.0.js"></script>
 	<script src="searchBar.js"></script>
 	<script src = "colors.js"></script>
 	<script src = "location.js" defer> </script>
 	<script src = "eventheodds.js"></script>
-	<script src = "addfavorite.php"></script>
+	<script src = "addfavorite.js"></script>
 </head>
 <body id = "body">
 <div id = "container">
@@ -113,12 +114,13 @@ print<<<page
 				<p> <strong> Tags: </strong> Entertainment, Dining, Music </p>
 
 			
-			<form action = 'addfavorite.php' method = 'POST'>
+			<form id='favoriteForm' method = 'POST'>
 				<input type = 'hidden' name = 'link' value = '6th.php'/>
 				<input type = 'hidden' name = 'title' value = '6th Street'/>
 				<input type = 'hidden' name = 'image' value = 'sixth1.jpg'/>
 				<input type = 'submit' name = 'submit' value = "Add to Favorites"/>
 			</form>
+			<div id='favorite_status'></div>
 			</div>
 		</div>
 		
