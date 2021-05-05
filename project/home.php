@@ -142,13 +142,15 @@ print<<<page
 					</div>
 				</div>
 			</div>
-		</div>
-
-		</div>
+			</div>
 
 		<div id = "footer">
 			Braden Wu | Brinnah Welmaker | Kimmi Sin | Last Updated: 04/25/2021
 		</div>
+		
+		</div>
+
+		
 
 </body>
 </html>

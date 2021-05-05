@@ -95,7 +95,7 @@ print<<<page
 					<h3> Krause Springs </h3>
 					<p> Camping and Swimming site </p>
 					<p> <strong> Tags: </strong> Outdoors, Camping, Swimming, Hot Springs, Hiking, Nature, Picnic </p>
-					<a href = "krause.php"> Read More! </a>
+					<a class = "readmore" href = "krause.php"> Read More! </a>
 				</div>
 			</div>
 			
@@ -105,7 +105,7 @@ print<<<page
 					<h3> Mayfield Park and Preserve </h3>
 					<p> Botannic garden, Peacock, Koi fish viewing, and Hiking trails </p>
 					<p> <strong> Tags: </strong> Outdoors, Hiking, Nature, Picnic </p>
-					<a href = "mayfield.php"> Read More! </a>
+					<a class = "readmore" href = "mayfield.php"> Read More! </a>
 				</div>
 			</div>
 
@@ -115,7 +115,7 @@ print<<<page
 					<h3> Zilker Park </h3>
 					<p> Hiking, Frisbee, Pinic, and Biking site </p>
 					<p> <strong> Tags: </strong> Outdoors, Hiking, Swimming, Camping, Waterfalls, Picnic, Nature, Running </p>
-					<a href = "zilker.php"> Read More! </a>
+					<a class = "readmore" href = "zilker.php"> Read More! </a>
 				</div>
 			</div>
 			
@@ -125,7 +125,7 @@ print<<<page
 					<h3> Lake Travis Waterloo Adventures </h3>
 					<p> Floating Water Park with an Obstacle Courses, Lounges, and Pinic areas </p>
 					<p> <strong> Tags: </strong> Outdoors, Sports, Swimming, Picnic </p>
-					<a href = "waterloo.php"> Read More! </a>
+					<a class = "readmore" href = "waterloo.php"> Read More! </a>
 				</div>
 			</div>
 
@@ -135,13 +135,13 @@ print<<<page
 					<h3> McKinney Falls State Park </h3>
 					<p> Camping, Fishing, Hiking, Pinic, Geocaching, Biking, and Swimming site </p>
 					<p> <strong> Tags: </strong> Outdoors, Hiking, Swimming, Camping, Waterfalls, Nature, Picnic, Running </p>
-					<a href = "mckinney.php"> Read More! </a>
+					<a class = "readmore" href = "mckinney.php"> Read More! </a>
 				</div>
 			</div>
 		</div>
 
 		<div id = "footer">
-			Braden Wu | Last Updated: 03/10/2021
+			Braden Wu | Last Updated: 05/04/2021
 		</div>
 	</div>
 

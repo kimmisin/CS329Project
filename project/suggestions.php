@@ -29,6 +29,22 @@
 		}
 	}
 
+	// text color mode
+	if (isset($_COOKIE["text"])){
+		$value = $_COOKIE["text"];
+		if ($value == "black"){
+			echo "<script> textBlack(); </script>";
+		}else if ($value == "white"){
+			echo "<script> textWhite(); </script>";		
+		}else if ($value == "red"){
+			echo "<script> textRed(); </script>";		
+		}else if ($value == "blue"){
+			echo "<script> textBlue(); </script>";		
+		}else{
+			echo "<script> textOrange(); </script>";		
+		}
+	}
+
 	// email: store the valid email into emailList.txt if it doesn't already exist
 	if (isset($_POST['email'])) {
 		$email = $_POST['email'];
@@ -142,61 +158,61 @@
 					Are you affiliated with UT Austin?
 				</label>
 				<select id = "affiliation" name="affiliation">
-				<option selected = "selected" value="-">-</option>
-						<option value="faculty"> Faculty </option>
-						<option value="student"> Student </option>
-						<option value="prospective"> Prospective Student </option>
-						<option value="unafiliated"> Not Affiliated </option>
-						<option value="other"> Other </option>
+					<option selected = "selected" value="-">-</option>
+					<option value="faculty"> Faculty </option>
+					<option value="student"> Student </option>
+					<option value="prospective"> Prospective Student </option>
+					<option value="unafiliated"> Not Affiliated </option>
+					<option value="other"> Other </option>
 				</select>
 				</div>
 
 				<!-- Dropdown for user's experience with Austin -->
 				<div class = "form_item">
-				<label>
-					What is your experience with Austin?
-				</label>
-				<select id = "experience" name="experience">
-					<option selected = "selected" value="-">-</option>
-					<option value="resident"> Austin Resident </option>
-					<option value="few"> Visited a few times </option>
-					<option value="never"> Never Visited </option>
-				</select>
+					<label>
+						What is your experience with Austin?
+					</label>
+					<select id = "experience" name="experience">
+						<option selected = "selected" value="-">-</option>
+						<option value="resident"> Austin Resident </option>
+						<option value="few"> Visited a few times </option>
+						<option value="never"> Never Visited </option>
+					</select>
 				</div>
 
 				<!-- Radio buttons for user's interested activity types -->
 				<div class = "form_item">
-				<label>
-					Indicate which of the following activity types you are interested in our site displaying more locations of.
-				</label>
-				<div id = "checkbox">
-				<input name = "interest[]" type = "checkbox" value = "Outdoor"><label> Outdoor Activities </label>
-				<input name = "interest[]" type = "checkbox" value = "Indoor"><label> Indoor Activities </label>
-				<input name = "interest[]" type = "checkbox" value = "Entertainment"><label> Entertainment </label>
-				<input name = "interest[]" type = "checkbox" value = "Study"><label> Study Spots </label>
-				<input name = "interest[]" type = "checkbox" value = "Dining"><label> Dining </label>
-				<input name = "interest[]" type = "checkbox" value = "Sports"><label> Sports </label>
-				</div>
+					<label>
+						Indicate which of the following activity types you are interested in our site displaying more locations of.
+					</label>
+					<div id = "checkbox">
+						<label><input name = "interest[]" type = "checkbox" value = "Outdoor">Outdoor Activities </label>
+						<label><input name = "interest[]" type = "checkbox" value = "Indoor">Indoor Activities </label>
+						<label><input name = "interest[]" type = "checkbox" value = "Entertainment"> Entertainment </label>
+						<label><input name = "interest[]" type = "checkbox" value = "Study">Study Spots </label>
+						<label><input name = "interest[]" type = "checkbox" value = "Dining">Dining </label>
+						<lable><input name = "interest[]" type = "checkbox" value = "Sports">Sports </label>
+					</div>
 				</div>
 
 				<!-- Textarea for user suggestions and comments -->
-				<p>
+				<div class = "form_item">
 					<label>If you have location recommendations, a suggestion for a new activity type, or any comments about the website and its functionalities, please enter them below.</label>
-				</p>
 					<div id = "textarea">	
-						<textarea id='textbox' name = "comments" placeholder="Type your input here."></textarea>
+						<textarea name = "comments" placeholder="Type your input here."></textarea>
 					</div>
-				
-				<input type = "reset" value = "Clear">
+				</div>
+				<input id="resetBtn" type = "reset" value = "Reset">
 				<input id="surveyForm" type = "submit" name="surveySubmit" value = "Submit">
 				
 			</form>
 		</div>
 
 		<div id = "footer">
-			Kimmi Sin | Last Updated: 04/17/2021
+			Kimmi Sin | Last Updated: 05/04/2021
 		</div>
 	</div>
 
 </body>
 </html>
+

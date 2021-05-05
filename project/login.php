@@ -1,78 +1,44 @@
-
+<!DOCTYPE html>
 <html lang = "en">
 <head>
 	<title> Suggestions Page </title>
 	<meta charset = "UTF-8">
 	<meta name = "description" content = "UT Austin Guide">
-	<meta name = "author" content = "Brinnah Welmaker">
+	<meta name = "author" content = "Brinnah Welmaker and Kimmi Sin">
     <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href = "starter.css" rel = "stylesheet">
-	<link href = "suggestions.css" rel = "stylesheet">
+    <link href = "login.css" rel = "stylesheet">
 	<script src="jquery-3.6.0.js"></script>
 	<script src="searchBar.js"></script>
-	<script src="suggestions.js"></script>
 	<script src ="colors.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#loginform").submit(function(event) {
+                event.preventDefault();
+                $.ajax({
+                    url: "loginSQL.php",
+                    type: "POST",
+                    data: $("#loginform").serialize(),
+                    success: function(data) {
+                        if (data == "SuccessfulLogin") {
+                            document.getElementById('user_status').innerHTML = 'Sucessful Login: You will be redirected to your location favorites in 5 seconds.';
+                            window.setTimeout(function() {location.href = 'favorites.php'}, 5000);
+                        }
+                        else if (data == "NewUserRegistered") {
+                            document.getElementById('user_status').innerHTML = 'Sucessful Registration: You will be redirected to your location favorites in 5 seconds.';
+                            window.setTimeout(function() {location.href = 'favorites.php'}, 5000);
+                        }
+                        else if (data == "FailedLogin") {
+                            document.getElementById('user_status').innerHTML = 'Incorrect username or password. Please try again.';
+                        }
+                    }
+                });
+            });
+        }); 
+    </script>
 </head>
 
 <body id = "body">
-<?php
-	
-	error_reporting(E_ALL);
-	ini_set("display_errors", "on");
-
-	// color mode
-	if (isset($_COOKIE["color"])){
-		$value = $_COOKIE["color"];
-		if ($value == "Night Mode"){
-			echo "<script> setNight(); </script>";
-		}else{
-			echo "<script> setDay(); </script>";		
-		}
-	}
-
-	 if (isset($_POST['username']) && isset($_POST['password'])){
-                $username = $_POST["username"];
-                $password = $_POST["password"];
-
-                $loggedIn = false;
-
-                $server = "spring-2021.cs.utexas.edu";
-                $user = "cs329e_bulko_brinnahw";
-                $pass = "ballet8nose5mere";
-                $database = "cs329e_bulko_brinnahw";
-                $mysqli = new mysqli ($server, $user, $pass, $database);
-                if ($mysqli->connect_errno) {
-                        die('Connect Error: ' . $mysqli->connect_errno . ":" . $mysqli->connect_error);
-                }
-
-                //check table to see if username exists in the table
-                $command = "SELECT * FROM users WHERE username = '$username'";
-                $result = $mysqli->query($command);
-
-                if (mysqli_num_rows($result)==0){
-                //if username not in db, add user and password to db and use ajax to display "New User Registered"
-                        $command = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
-                        $result = $mysqli->query($command);
-                        setcookie("username", $username, time()+1000, "/");
-                        header("Location:favorites.php");
-
-                }else{
-                //if userame is present check password
-                        $command = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
-                        $result = $mysqli->query($command);
-
-                        if (mysqli_num_rows($result)==0){
-                                echo "<script>alert('Incorrect Password')</script>";
-                        }else{
-                                setcookie("username", $username, time()+1000, "/");
-                                header("Location:favorites.php");
-                        }
-                }
-                $mysqli->close();
-        }
-
-
-?>
 	<div id = "container">
 		<!-- includes: logo, banner -->
         <div id = "top">
@@ -116,24 +82,52 @@
                 </form>
             </div>
 			</div>
+
 		<div id = "content">
-			<form  method = "post" id = 'loginform' name = 'loginform' action="login.php">
-                        <h1> Login or Register </h1>
-                        <p>
-                                Username <input type = "text" name = "username"/><br>
-				<br>
-				Password <input type = "password" name = "password"/>
-                        </p>
-                        <p>
-                                <input type = "submit" value = "Submit" name = "button" id = "button"/>
-                                <input type = "reset" value = "Reset" name = "button" id = "button"/>
-                        </p>
-                        </form>
+<?php
+    // color mode
+    if (isset($_COOKIE["color"])){
+        $value = $_COOKIE["color"];
+        if ($value == "Night Mode"){
+            echo "<script> setNight(); </script>";
+        }else{
+            echo "<script> setDay(); </script>";        
+        }
+    }
+
+    // text color mode
+    if (isset($_COOKIE["text"])){
+        $value = $_COOKIE["text"];
+        if ($value == "black"){
+            echo "<script> textBlack(); </script>";
+        }else if ($value == "white"){
+            echo "<script> textWhite(); </script>";     
+        }else if ($value == "red"){
+            echo "<script> textRed(); </script>";       
+        }else if ($value == "blue"){
+            echo "<script> textBlue(); </script>";      
+        }else{
+            echo "<script> textOrange(); </script>";        
+        }
+    }
+?>
+            <h1> Login or Register </h1>
+            <p> You are currently not logged into an account, please log in or register to view or add favorite locations.</p>
+			<form method="POST" id="loginform" name="loginform">
+                <label>Username: </label>
+                <input type="text" name="username" id="username" required>
+                <label>Password: </label>
+                <input type="password" name="password" id="password" required>
+                <div id="user_status"></div>
+                <input class="btn" type="reset" value="Reset">
+                <input class="btn" type="submit" value="Submit">
+            </form>
 		</div>
 		<div id = "footer">
-			Brinnah Welmaker | Last Updated: 05/03/2021
+			Brinnah Welmaker | Kimmi Sin | Last Updated: 05/04/2021
 		</div>
 	</div>
 
 </body>
+</html>
 

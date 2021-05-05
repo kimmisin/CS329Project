@@ -6,6 +6,7 @@ body, #container, #top {
 }
 
 #top #logo_set {
+	color: black;
 	float: left;
 	width: 30%;
 	height: 15vw;

@@ -84,6 +84,7 @@
 		}
 	}
 
+	// text color mode
 	if (isset($_COOKIE["text"])){
 		$value = $_COOKIE["text"];
 		if ($value == "black"){
@@ -111,52 +112,51 @@
 					Are you affiliated with UT Austin?
 				</label>
 				<select id = "affiliation" name="affiliation">
-				<option selected = "selected" value="-">-</option>
-						<option value="faculty"> Faculty </option>
-						<option value="student"> Student </option>
-						<option value="prospective"> Prospective Student </option>
-						<option value="unafiliated"> Not Affiliated </option>
-						<option value="other"> Other </option>
+					<option selected = "selected" value="-">-</option>
+					<option value="faculty"> Faculty </option>
+					<option value="student"> Student </option>
+					<option value="prospective"> Prospective Student </option>
+					<option value="unafiliated"> Not Affiliated </option>
+					<option value="other"> Other </option>
 				</select>
 				</div>
 
 				<!-- Dropdown for user's experience with Austin -->
 				<div class = "form_item">
-				<label>
-					What is your experience with Austin?
-				</label>
-				<select id = "experience" name="experience">
-					<option selected = "selected" value="-">-</option>
+					<label>
+						What is your experience with Austin?
+					</label>
+					<select id = "experience" name="experience">
+						<option selected = "selected" value="-">-</option>
 						<option value="resident"> Austin Resident </option>
 						<option value="few"> Visited a few times </option>
 						<option value="never"> Never Visited </option>
-				</select>
+					</select>
 				</div>
 
 				<!-- Radio buttons for user's interested activity types -->
 				<div class = "form_item">
-				<label>
-					Indicate which of the following activity types you are interested in our site displaying more locations of.
-				</label>
-				<div id = "checkbox">
-				<input name = "interest[]" type = "checkbox" value = "Outdoor"><label> Outdoor Activities </label>
-				<input name = "interest[]" type = "checkbox" value = "Indoor"><label> Indoor Activities </label>
-				<input name = "interest[]" type = "checkbox" value = "Entertainment"><label> Entertainment </label>
-				<input name = "interest[]" type = "checkbox" value = "Study"><label> Study Spots </label>
-				<input name = "interest[]" type = "checkbox" value = "Dining"><label> Dining </label>
-				<input name = "interest[]" type = "checkbox" value = "Sports"><label> Sports </label>
-				</div>
+					<label>
+						Indicate which of the following activity types you are interested in our site displaying more locations of.
+					</label>
+					<div id = "checkbox">
+						<label><input name = "interest[]" type = "checkbox" value = "Outdoor">Outdoor Activities </label>
+						<label><input name = "interest[]" type = "checkbox" value = "Indoor">Indoor Activities </label>
+						<label><input name = "interest[]" type = "checkbox" value = "Entertainment"> Entertainment </label>
+						<label><input name = "interest[]" type = "checkbox" value = "Study">Study Spots </label>
+						<label><input name = "interest[]" type = "checkbox" value = "Dining">Dining </label>
+						<lable><input name = "interest[]" type = "checkbox" value = "Sports">Sports </label>
+					</div>
 				</div>
 
 				<!-- Textarea for user suggestions and comments -->
-				<p>
+				<div class = "form_item">
 					<label>If you have location recommendations, a suggestion for a new activity type, or any comments about the website and its functionalities, please enter them below.</label>
-				</p>
 					<div id = "textarea">	
 						<textarea name = "comments" placeholder="Type your input here."></textarea>
 					</div>
-				
-				<input type = "reset" value = "Clear">
+				</div>
+				<input id="resetBtn" type = "reset" value = "Reset">
 				<input id="surveyForm" type = "submit" name="surveySubmit" value = "Submit">
 				
 			</form>

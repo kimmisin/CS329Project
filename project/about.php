@@ -46,7 +46,7 @@
 			</div>
 			<a href = "about.php">About Us</a>
 			<a href = "resources.php">Resources</a>
-			<a href = "suggestions.php">Suggestions</a>
+			<a href = "suggestionsPage.php">Suggestions</a>
 			<a href = "favorites.php">Favorites</a>
 			<a href = "color.php">Page Customization</a>
 
@@ -87,17 +87,19 @@
 
 
 print<<<page
-            <h1> About Us </h1>
-	    	<div class = "video">
-			<video class = "vid" height = "400" width = "700" controls>
-				<source src = "UTaG.mp4">
-			</video>
-	 	</div>
-		<p> Video Credits: AndrewG I Background Music for Videos, Business Insider, TAPP Channel, and The University of Texas at Austin. </p>
-            <p>Learn more about the creators of the ultimate Austin guide for UT students. All are current students studying at UT.</p>
+        <h1> About Us </h1>
+        <p>Learn more about the creators of the ultimate Austin guide for UT students. All are current students studying at UT.</p>
+        <br>
+    	<div class = "video">
+    		<video class = "vid" controls>
+    			<source src = "UTaG.mp4">
+    		</video>
+            <p> 
+                Video Credits: AndrewG I Background Music for Videos, Business Insider, TAPP Channel, and The University of Texas at Austin.
+            </p>
             <br>
+	 	</div>
             <hr>
-			
             <div class= "leftalign">
                 <img class = "profile" src = "braden.png" alt = "braden">
                 <div class="text">
@@ -133,7 +135,7 @@ print<<<page
         </div>
 
         <div id = "footer">
-            Brinnah Welmaker | Kimmi Sin | Last Updated: 04/05/2021
+            Brinnah Welmaker | Kimmi Sin | Last Updated: 05/04/2021
         </div>
     </div>
 </body>

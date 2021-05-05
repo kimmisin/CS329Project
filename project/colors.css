@@ -1,0 +1,43 @@
+#content {
+	text-align: center;
+}
+
+#content h1, #content p {
+	text-align: left;
+}
+
+#customization {
+	width: 60%;
+	margin: auto;
+	text-align: left;
+	font-size: 1.5vw;
+}
+
+label {
+	display: block;
+	margin-top: 1vw;
+}
+
+input[type='submit']{
+	float: right;
+}
+
+input[type='radio'] {
+	margin-left: 2vw;
+}
+
+.btn {
+	width: 48%;
+	font-size: 1.3vw;
+	margin-top: 1vw;
+	background-color: transparent;
+	color: inherit;
+	border: 2px solid #ff8c00;
+	padding: 0.9vw 1.5vw;
+	text-align: center;
+}
+
+.btn:hover {
+	background-color: #ff8c00;
+	color: white;
+}

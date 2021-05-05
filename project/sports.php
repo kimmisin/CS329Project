@@ -95,7 +95,7 @@ print<<<page
 					<h3> Darrell K Royal Stadium </h3>
 					<p> Home of the Texas Longhorns </p>
 					<p> <strong> Tags: </strong> Sports, Football </p>
-					<a href = "dkr.php"> Read More! </a>
+					<a class = "readmore" href = "dkr.php"> Read More! </a>
 				</div>
 			</div>
 			
@@ -105,7 +105,7 @@ print<<<page
 					<h3> Gregory Gym </h3>
 					<p> Play basketball, workout, or even dance here at Gregory Gym </p>
 					<p> <strong> Tags: </strong> Sports, Weight Lifting, Running, Basketball, Volleyball, Dance, Swimming </p>
-					<a href = "greg.php"> Read More! </a>
+					<a class = "readmore" href = "greg.php"> Read More! </a>
 				</div>
 			</div>
 
@@ -115,7 +115,7 @@ print<<<page
 					<h3> Circuit of the Americas </h3>
 					<p> Love Racing? The Circuit of the Americas racetrack is located right outside Austin </p>
 					<p> <strong> Tags: </strong> Sports, Racing </p>
-					<a href = "circuit.php"> Read More! </a>
+					<a class = "readmore" href = "circuit.php"> Read More! </a>
 				</div>
 			</div>
 			
@@ -125,7 +125,7 @@ print<<<page
 					<h3> Frank Erwin Center </h3>
 					<p> Love UT Basketball? Get seats here at the Frank Erwin Center </p>
 					<p> <strong> Tags: </strong> Sports, Basketball, Volleyball, Music </p>
-					<a href = "fec.php"> Read More! </a>
+					<a class = "readmore" href = "fec.php"> Read More! </a>
 				</div>
 			</div>
 
@@ -135,13 +135,13 @@ print<<<page
 					<h3> Austin Bouldering Project </h3>
 					<p> Test your upper body strength by bouldering at the Austin Bouldering Project </p>
 					<p> <strong> Tags: </strong> Sports, Rock Climbing, Bouldering </p>
-					<a href = "bouldering.php"> Read More! </a>
+					<a class = "readmore" href = "bouldering.php"> Read More! </a>
 				</div>
 			</div>
 		</div>
 
 		<div id = "footer">
-			Braden Wu | Kimmi Sin | Last Updated: 04/05/2021
+			Braden Wu | Kimmi Sin | Last Updated: 05/04/2021
 		</div>
 	</div>
 

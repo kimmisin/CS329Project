@@ -94,7 +94,7 @@ print<<<page
 					<h3> Perry Castaneda Library (PCL) </h3>
 					<p> Main Library on the UT Campus </p>
 					<p> <strong> Tags: </strong> Study Spots </p>
-					<a href = "pcl.php"> Read More! </a>
+					<a class = "readmore" href = "pcl.php"> Read More! </a>
 				</div>
 			</div>
 			
@@ -104,7 +104,7 @@ print<<<page
 					<h3> Monkey Nest Coffee </h3>
 					<p> Quirky coffee shop located 15 min from campus </p>
 					<p> <strong> Tags: </strong> Study Spots, Coffee </p>
-					<a href = "monkey.php"> Read More! </a>
+					<a class = "readmore" href = "monkey.php"> Read More! </a>
 				</div>
 			</div>
 
@@ -114,7 +114,7 @@ print<<<page
 					<h3> Caffee Medici </h3>
 					<p> Popular coffee shop located next to UT on Guadaulpe </p>
 					<p> <strong> Tags: </strong> Study Spots, Coffee </p>
-					<a href = "medici.php"> Read More! </a>
+					<a class = "readmore" href = "medici.php"> Read More! </a>
 				</div>
 			</div>
 			
@@ -124,7 +124,7 @@ print<<<page
 					<h3> Flawn Academic Center (FAC) </h3>
 					<p> The FAC provides students with a collaborative learning space right on campus </p>
 					<p> <strong> Tags: </strong> Study Spots </p>
-					<a href = "fac.php"> Read More! </a>
+					<a class = "readmore" href = "fac.php"> Read More! </a>
 				</div>
 			</div>
 
@@ -134,13 +134,13 @@ print<<<page
 					<h3> Texas Union </h3>
 					<p> Like the FAC, the Union provides restaurants and study spaces for students. </p>
 					<p> <strong> Tags: </strong> Study Spots, Dining, Coffee </p>
-					<a href = "union.php"> Read More! </a>
+					<a class = "readmore" href = "union.php"> Read More! </a>
 				</div>
 			</div>
 		</div>
 
 		<div id = "footer">
-			Braden Wu | Kimmi Sin | Last Updated: 04/05/2021
+			Braden Wu | Kimmi Sin | Last Updated: 05/04/2021
 		</div>
 	</div>
 

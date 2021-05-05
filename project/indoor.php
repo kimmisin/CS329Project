@@ -96,7 +96,7 @@ print<<<page
 					<h3> Bullock Texas State History Museum </h3>
 					<p> History Museum located within the Capitol District </p>
 					<p> <strong> Tags: </strong> Indoors, Museum, Theatre </p>
-					<a href = "bullock.php"> Read More! </a>
+					<a class = "readmore" href = "bullock.php"> Read More! </a>
 				</div>
 			</div>
 			
@@ -106,7 +106,7 @@ print<<<page
 					<h3> Blanton Museum of Art </h3>
 					<p> Art Museum located on the UT Campus </p>
 					<p> <strong> Tags: </strong> Indoors, Art, Museum </p>
-					<a href = "blanton.php"> Read More! </a>
+					<a class = "readmore" href = "blanton.php"> Read More! </a>
 				</div>
 			</div>
 
@@ -116,7 +116,7 @@ print<<<page
 					<h3> Museum of the Weird </h3>
 					<p> This museum houses a unique collection of weird items for all to enjoy </p>
 					<p> <strong> Tags: </strong> Indoors, Museum </p>
-					<a href = "weird.php"> Read More! </a>
+					<a class = "readmore" href = "weird.php"> Read More! </a>
 				</div>
 			</div>
 			
@@ -126,7 +126,7 @@ print<<<page
 					<h3> Thinkery </h3>
 					<p> Austin's favorite children's museum that houses creative and stimulating exhibits. </p>
 					<p> <strong> Tags: </strong> Indoors, Museum </p>
-					<a href = "thinkery.php"> Read More! </a>
+					<a class = "readmore" href = "thinkery.php"> Read More! </a>
 				</div>
 			</div>
 
@@ -136,13 +136,13 @@ print<<<page
 					<h3> Texas State Capitol </h3>
 					<p> Come visit the seat of Texas's Government </p>
 					<p> <strong> Tags: </strong> Indoors, Museum, Nature </p>
-					<a href = "capitol.php"> Read More! </a>
+					<a class = "readmore" href = "capitol.php"> Read More! </a>
 				</div>
 			</div>
 		</div>
 
 		<div id = "footer">
-			Kimmi Sin | Last Updated: 03/10/2021
+			Kimmi Sin | Last Updated: 05/04/2021
 		</div>
 	</div>
 

@@ -1,0 +1,49 @@
+#content {
+	text-align: center;
+}
+
+#content h1, #content p {
+	text-align: left;
+}
+
+#loginform {
+	width: 60%;
+	margin: auto;
+	text-align: left;
+	font-size: 1.7vw;
+}
+
+label {
+	display: block;
+	margin-top: 1vw;
+}
+
+#user_status {
+	font-size: 1.2vw;
+}
+
+input[type='text'], input[type='password'] {
+	width: 100%;
+	font-size: inherit;
+}
+
+
+input[type='submit']{
+	float: right;
+}
+
+.btn {
+	width: 48%;
+	font-size: 1.5vw;
+	margin-top: 1vw;
+	background-color: transparent;
+	color: inherit;
+	border: 2px solid #ff8c00;
+	padding: 0.9vw 1.5vw;
+	text-align: center;
+}
+
+.btn:hover {
+	background-color: #ff8c00;
+	color: white;
+}

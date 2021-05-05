@@ -46,25 +46,25 @@ function setNight(){
 
 function textBlack(){
 	console.log("black");
-	document.getElementById("content").style.color = "black";
+	document.getElementById("container").style.color = "black";
 }
 
 function textWhite(){
 	console.log("white");
-	document.getElementById("content").style.color = "white";
+	document.getElementById("container").style.color = "white";
 }	
 
 function textRed(){
 	console.log("red");
-	document.getElementById("content").style.color = "red";
+	document.getElementById("container").style.color = "red";
 }
 
 function textBlue(){
 	console.log("blue");
-	document.getElementById("content").style.color = "blue";
+	document.getElementById("container").style.color = "blue";
 }
 
 function textOrange(){
 	console.log("orange");
-	document.getElementById("content").style.color = "orange";
+	document.getElementById("container").style.color = "orange";
 }

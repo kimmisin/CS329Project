@@ -2,6 +2,7 @@
 	float: right;
 	width: 15%;
 	margin: 0;
+	font-color: inherit;
 }
 
 #rightnav form {
@@ -9,11 +10,24 @@
 }
 
 #email_textarea {
-	width: 80%;
+	width: 90%;
 }
 
 #rightnav textarea {
 	width: 100%;
+	color: gray;
+}
+
+#email {
+	background-color: transparent;
+	color: inherit;
+	border: 2px solid #ff8c00;
+	padding: 0.3vw 0.5vw;
+	text-align: center;
+	font-size: 0.9vw;
+	float: right;
+	margin-top: 0.5vw;
+	margin-right: 1.2vw;
 }
 
 #content h1 {
@@ -21,28 +35,43 @@
 }
 
 #content p {
-	margin: 0;
-    padding: 1.5vw 0 0 0;
+	margin-right: 5vw;
+}
+
+form {
+	width: 80%;
+	margin: auto;
+	font-size: 1.3vw;
 }
 
 .form_item {
 	display: block;
-	padding: 1vw 0 0 0;
+	padding: 1.5vw 0 0 0;
 }
 
 .form_item .checkbox {
 	display: block;
 }
-p label {
-	display: block;
-}
 
 textarea {
-	width: 40vw;
+	width: 57.4vw;
 	height: 10vw;
-	/*background-color: gainsboro;*/
+	margin-bottom: 1vw;
+	color: gray;
 }
 
-input, select {
-	/*background-color: gainsboro;*/
+#surveyForm, #resetBtn {
+	width: 48%;
+	font-size: 1.5vw;
+
+	background-color: transparent;
+	color: inherit;
+	border: 2px solid #ff8c00;
+	padding: 1vw 1.5vw;
+	text-align: center;
+}
+
+#surveyForm:hover, #resetBtn:hover, #email:hover {
+	background-color: #ff8c00;
+	color: white;
 }

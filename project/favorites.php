@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
-        <title> Favorites</title>
-        <meta charset = "UTF-8">
-        <meta name = "description" content = "Favorites">
-        <meta name = "author" content = "Brinnah Welmaker">
-        <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href = "starter.css" rel = "stylesheet">
-        <link href = "locationList.css"  rel = "stylesheet">
-        <script src = "colors.js"></script>
-        <script src="searchBar.js"></script>
-        <script src = "eventheodds.js"></script>
+    <title> Favorites</title>
+    <meta charset = "UTF-8">
+    <meta name = "description" content = "Favorites">
+    <meta name = "author" content = "Brinnah Welmaker">
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href = "starter.css" rel = "stylesheet">
+    <link href = "locationList.css"  rel = "stylesheet">
+    <script src = "colors.js"></script>
+    <script src="searchBar.js"></script>
+    <script src = "eventheodds.js"></script>
 	<script src = "login.php"></script>
 </head>
 
 <body id = "body">
+    <div id = "container">
 <?php
+    // color mode
 	if (isset($_COOKIE["color"])){
 		$value = $_COOKIE["color"];
 		if ($value == "Night Mode"){
@@ -25,12 +27,27 @@
 		}
 	}
 
+    // text color mode
+    if (isset($_COOKIE["text"])){
+        $value = $_COOKIE["text"];
+        if ($value == "black"){
+            echo "<script> textBlack(); </script>";
+        }else if ($value == "white"){
+            echo "<script> textWhite(); </script>";     
+        }else if ($value == "red"){
+            echo "<script> textRed(); </script>";       
+        }else if ($value == "blue"){
+            echo "<script> textBlue(); </script>";      
+        }else{
+            echo "<script> textOrange(); </script>";        
+        }
+    }
+
 	if (!isset($_COOKIE["username"])){
 		header("Location:login.php");
 	}
 
 print<<<page
-    <div id = "container">
         <!-- includes: logo, banner -->
         <div id = "top">
             <div id = "logo_set">
@@ -101,7 +118,7 @@ page;
 
 			echo "<div class = 'text'>";
 			echo "<h3>" . $row['title'] . "</h3>" ; 
-			echo "<a href = " . $row['favorite'] . "> Read More! </a><br>";
+			echo "<a class='readmore' href = " . $row['favorite'] . "> Read More! </a><br>";
 			echo "<br>";
 			echo "<form action = 'removefavorite.php' method = 'POST'>";
 			echo "<input type = 'hidden' name = 'link' value = " . $row['favorite'] . "'/>";
@@ -115,7 +132,7 @@ page;
 
 print<<<page
 		</div>
-        <hr>
+        
         <div id = "footer">
             Brinnah Welmaker | Last Updated: 05/03/2021
         </div>

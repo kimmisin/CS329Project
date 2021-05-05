@@ -7,6 +7,7 @@
 	<meta name = "author" content = "Braden Wu, Brinnah Welmaker">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href = "starter.css" rel = "stylesheet">
+	<link href = "colors.css" rel = "stylesheet">
 	<link href = "home.css" rel = "stylesheet">
 	<script src="eventheodds.js"></script>
 	<script src="searchBar.js"></script>
@@ -113,31 +114,29 @@ print<<<page
 
 		<div id = "content">	
 			<h1> Page Customization </h1>
+			<p>Use the form below to modify the website's background color and text color for optimal user experience.</p>
 			<form id = "customization" method = "POST" action = "color.php">
 				<label> <strong> Page Color Setting: </strong> </label>
-				<br>
-					<input type = "radio" name = "colorMode" value = "Night Mode"> Night Mode
-					<input type = "radio" name = "colorMode" value = "Day Mode"> Day Mode
-				<br>
-				<br>
+				<label><input type = "radio" name = "colorMode" value = "Night Mode"> Night Mode</label>
+				<label><input type = "radio" name = "colorMode" value = "Day Mode"> Day Mode</label>
+
 				<label> <strong> Text Color Setting: </strong> </label>
-				<br>
-					<input type = "radio" name = "textColor" value = "black"> Black
-					<input type = "radio" name = "textColor" value = "white"> White
-					<input type = "radio" name = "textColor" value = "red"> Red
-					<input type = "radio" name = "textColor" value = "blue"> Blue
-					<input type = "radio" name = "textColor" value = "orange"> Orange
-				<br>
-				<input type = "submit" name = "colorSettings" value = "Change Settings">
+				<label><input type = "radio" name = "textColor" value = "black"> Black</label>
+				<label><input type = "radio" name = "textColor" value = "white"> White</label>
+				<label><input type = "radio" name = "textColor" value = "red"> Red</label>
+				<label><input type = "radio" name = "textColor" value = "blue"> Blue</label>
+				<label><input type = "radio" name = "textColor" value = "orange"> Orange</label>
+
+				<input class="btn" type = "reset" value = "Reset">
+				<input class="btn" type = "submit" name = "colorSettings" value = "Change Settings">
 			</form>
 		</div>
 
-		</div>
-
 		<div id = "footer">
-			Braden Wu | Brinnah Welmaker | Last Updated: 04/05/2021
+			Braden Wu | Kimmi Sin | Last Updated: 05/04/2021
 		</div>
 
+	</div>
 </body>
 </html>
 page;
@@ -196,12 +195,10 @@ print<<<page2
 			<p> Settings Updated! </p>
 		</div>
 
-		</div>
-
 		<div id = "footer">
-			Braden Wu | Brinnah Welmaker | Last Updated: 04/05/2021
+			Braden Wu | Kimmi Sin | Last Updated: 05/04/2021
 		</div>
-
+	</div>
 </body>
 </html>
 page2;

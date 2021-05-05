@@ -93,7 +93,7 @@ print<<<page
 					<h3> Austin City Limits</h3>
 					<p> Annual Music Festival hosted within Zilker Park </p>
 					<p> <strong> Tags: </strong> Entertainment, Music </p>
-					<a href = "acl.php"> Read More! </a>
+					<a class = "readmore" href = "acl.php"> Read More! </a>
 				</div>
 			</div>
 			
@@ -103,7 +103,7 @@ print<<<page
 					<h3> South By Southwest </h3>
 					<p> Annual Media/Technology Conference hosted within Downtown Austin. </p>
 					<p> <strong> Tags: </strong> Entertainment, Film </p>
-					<a href = "sxsw.php"> Read More! </a>
+					<a class = "readmore" href = "sxsw.php"> Read More! </a>
 				</div>
 			</div>
 
@@ -113,7 +113,7 @@ print<<<page
 					<h3> ZACH Theatre </h3>
 					<p> The ZACH Theatre is the oldest Theatre Group in Texas </p>
 					<p> <strong> Tags: </strong> Entertainment, Theatre </p>
-					<a href = "zach.php"> Read More! </a>
+					<a class = "readmore" href = "zach.php"> Read More! </a>
 				</div>
 			</div>
 			
@@ -123,7 +123,7 @@ print<<<page
 					<h3> The Long Center for Performing Arts </h3>
 					<p> A well renown and popular performing arts venue located right on the Colorado River. </p>
 					<p> <strong> Tags: </strong> Entertainment, Music, Theatre </p>
-					<a href = "long.php"> Read More! </a>
+					<a class = "readmore" href = "long.php"> Read More! </a>
 				</div>
 			</div>
 
@@ -133,14 +133,14 @@ print<<<page
 					<h3> 6th Street </h3>
 					<p> 6th Street is the lively home of Austin's Nightlife </p>
 					<p> <strong> Tags: </strong> Entertainment, Dining, Music </p>
-					<a href = "6th.php"> Read More! </a>
+					<a class = "readmore" href = "6th.php"> Read More! </a>
 				</div>
 			</div>
 			
 		</div>
 
 		<div id = "footer">
-			Kimmi Sin | Last Updated: 03/10/2021
+			Kimmi Sin | Last Updated: 05/04/2021
 		</div>
 	</div>
 

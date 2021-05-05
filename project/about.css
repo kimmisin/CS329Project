@@ -26,12 +26,19 @@ hr {
 }
 
 .video{
-	border-left: 125px solid transparent;
-	width: 700px;
-	height: 400px;
 	text-align: center;
+	height: auto;
+}
+
+.video p {
+	font-size: 0.9vw;
+	margin: 2.5px;
 }
 
 .vid{
-	object-fit: cover;
+	width: 80%;
+	margin: auto;
+	display: block;
 }
+
+

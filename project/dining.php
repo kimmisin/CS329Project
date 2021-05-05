@@ -95,7 +95,7 @@ print<<<page
 					<h3> Homeslice Pizza </h3>
 					<p> Austin's Premiere Pizza Restaurant </p>
 					<p> <strong> Tags: </strong> Dining </p>
-					<a href = "homeslice.php"> Read More! </a>
+					<a class = "readmore" href = "homeslice.php"> Read More! </a>
 				</div>
 			</div>
 			
@@ -105,7 +105,7 @@ print<<<page
 					<h3> Gus's World Famous Fried Chicken </h3>
 					<p> Some of the best fried chicken you'll find in Austin </p>
 					<p> <strong> Tags: </strong> Dining </p>
-					<a href = "gus.php"> Read More! </a>
+					<a class = "readmore" href = "gus.php"> Read More! </a>
 				</div>
 			</div>
 
@@ -115,7 +115,7 @@ print<<<page
 					<h3> Gourdough's Public House </h3>
 					<p> Donuts and Chicken? You must be dreaming! </p>
 					<p> <strong> Tags: </strong> Dining </p>
-					<a href = "gourdoughs.php"> Read More! </a>
+					<a class = "readmore" href = "gourdoughs.php"> Read More! </a>
 				</div>
 			</div>
 			
@@ -125,7 +125,7 @@ print<<<page
 					<h3> El Patio Mexican Food </h3>
 					<p> Amazing Tex-Mex restaurant located right by UT </p>
 					<p> <strong> Tags: </strong> Dining </p>
-					<a href = "patio.php"> Read More! </a>
+					<a class = "readmore" href = "patio.php"> Read More! </a>
 				</div>
 			</div>
 
@@ -135,14 +135,14 @@ print<<<page
 					<h3> Franklin's Barbeque </h3>
 					<p> Yup, this is The Franklin's BBQ. There is a reason why President Obama came here to eat. </p>
 					<p> <strong> Tags: </strong> Dining </p>
-					<a href = "franklins.php"> Read More! </a>
+					<a class = "readmore" href = "franklins.php"> Read More! </a>
 				</div>
 			</div>
 			
 		</div>
 
 		<div id = "footer">
-			Braden Wu | Last Updated: 04/03/2021
+			Braden Wu | Last Updated: 05/04/2021
 		</div>
 	</div>
 

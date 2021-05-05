@@ -33,3 +33,18 @@ img {
 	clear: both;
 	text-align: center;
 }
+
+input[type='submit'] {
+	background-color: transparent;
+	color: inherit;
+	border: 2px solid #ff8c00;
+	padding: 0.8vw 1.2vw;
+	text-align:center;
+	text-decoration:none;
+	display:inline-block;
+}
+
+input[type='submit']:hover {
+	background-color: #ff8c00;
+	color: white;
+}
