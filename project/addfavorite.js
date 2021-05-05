@@ -14,10 +14,12 @@ $(document).ready(function() {
                 }
                 else if ($.trim(data) == "dontAdd") {
                     document.getElementById('favorite_status').innerHTML = 'Location is already in favorites';
-
                 }
                 else if ($.trim(data) == "notLoggedIn") {
                     location.href = 'login.php';
+                }
+                else {
+                    document.getElementById('favorite_status').innerHTML = 'Error while adding location: ' + data;
                 }
             }
         });

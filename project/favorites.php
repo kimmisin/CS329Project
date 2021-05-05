@@ -11,43 +11,10 @@
     <script src = "colors.js"></script>
     <script src="searchBar.js"></script>
     <script src = "eventheodds.js"></script>
-	<script src = "login.php"></script>
 </head>
 
 <body id = "body">
     <div id = "container">
-<?php
-    // color mode
-	if (isset($_COOKIE["color"])){
-		$value = $_COOKIE["color"];
-		if ($value == "Night Mode"){
-			echo "<script> setNight(); </script>";
-		}else{
-			echo "<script> setDay(); </script>";		
-		}
-	}
-
-    // text color mode
-    if (isset($_COOKIE["text"])){
-        $value = $_COOKIE["text"];
-        if ($value == "black"){
-            echo "<script> textBlack(); </script>";
-        }else if ($value == "white"){
-            echo "<script> textWhite(); </script>";     
-        }else if ($value == "red"){
-            echo "<script> textRed(); </script>";       
-        }else if ($value == "blue"){
-            echo "<script> textBlue(); </script>";      
-        }else{
-            echo "<script> textOrange(); </script>";        
-        }
-    }
-
-	if (!isset($_COOKIE["username"])){
-		header("Location:login.php");
-	}
-
-print<<<page
         <!-- includes: logo, banner -->
         <div id = "top">
             <div id = "logo_set">
@@ -92,45 +59,74 @@ print<<<page
         </div>
 
 		<div id = "content">
-			<h1>Welcome to your favorite places!</h1>
-page;
-	$server = "spring-2021.cs.utexas.edu";
-	$user = "cs329e_bulko_brinnahw";
-	$pass = "ballet8nose5mere";
-	$database = "cs329e_bulko_brinnahw";
-	$mysqli = new mysqli ($server, $user, $pass, $database);
+            <h1>Welcome to your favorite places!</h1>
+<?php
+    // color mode
+    if (isset($_COOKIE["color"])){
+        $value = $_COOKIE["color"];
+        if ($value == "Night Mode"){
+            echo "<script> setNight(); </script>";
+        }else{
+            echo "<script> setDay(); </script>";        
+        }
+    }
+
+    // text color mode
+    if (isset($_COOKIE["text"])){
+        $value = $_COOKIE["text"];
+        if ($value == "black"){
+            echo "<script> textBlack(); </script>";
+        }else if ($value == "white"){
+            echo "<script> textWhite(); </script>";     
+        }else if ($value == "red"){
+            echo "<script> textRed(); </script>";       
+        }else if ($value == "blue"){
+            echo "<script> textBlue(); </script>";      
+        }else{
+            echo "<script> textOrange(); </script>";        
+        }
+    }
+
+    // redirect to login page if not logged in
+    if (!isset($_COOKIE["username"])){
+        header("Location:login.php");
+    }
+    // logged in already
+    else {
+    	$server = "spring-2021.cs.utexas.edu";
+    	$user = "cs329e_bulko_brinnahw";
+    	$pass = "ballet8nose5mere";
+    	$database = "cs329e_bulko_brinnahw";
+    	$mysqli = new mysqli ($server, $user, $pass, $database);
         if ($mysqli->connect_errno) {
         	die('Connect Error: ' . $mysqli->connect_errno . ":" . $mysqli->connect_error);
-	}
+	   }
 
-	$username = $_COOKIE['username'];
-
-	$command = "SELECT * FROM favorites WHERE username = '$username'";
+    	$username = $_COOKIE['username'];
+    	$command = "SELECT * FROM favorites WHERE username = '$username'";
         $result = $mysqli->query($command);
-
 
         if (mysqli_num_rows($result)==0){
                 echo "<p>No favorites added.</p>";
-        }else{
-		while ($row = $result->fetch_assoc()){
-			echo "<div class = 'activity'>";
-			echo "<img src = " . $row['image'] . " alt = favorite image>";
-
-			echo "<div class = 'text'>";
-			echo "<h3>" . $row['title'] . "</h3>" ; 
-			echo "<a class='readmore' href = " . $row['favorite'] . "> Read More! </a><br>";
-			echo "<br>";
-			echo "<form action = 'removefavorite.php' method = 'POST'>";
-			echo "<input type = 'hidden' name = 'link' value = " . $row['favorite'] . "'/>";
-			echo "<input type = 'submit' name = 'submit' value = 'Remove from Favorites'/>";
-			echo "</form></div></div>";
-
-			echo "</body>";
-                }
         }
+        else{
+    		while ($row = $result->fetch_assoc()){
+    			echo "<div class = 'activity'>";
+    			echo "<img src = " . $row['image'] . " alt = favorite image>";
 
+    			echo "<div class = 'text'>";
+    			echo "<h3>" . $row['title'] . "</h3>" ; 
+    			echo "<a class='readmore' href = " . $row['favorite'] . "> Read More! </a><br>";
+    			echo "<br>";
+    			echo "<form action = 'removefavorite.php' method = 'POST'>";
+    			echo "<input type = 'hidden' name = 'link' value = " . $row['favorite'] . "'/>";
+    			echo "<input type = 'submit' name = 'submit' value = 'Remove from Favorites'/>";
+    			echo "</form></div></div>";
+            }
 
-print<<<page
+        }
+    }
+?>
 		</div>
         
         <div id = "footer">
@@ -139,5 +135,3 @@ print<<<page
     </div>
 </body>
 </html>
-page;
-?>

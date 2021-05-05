@@ -30,9 +30,7 @@
 	            $command = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
 	            $result = $mysqli->query($command);
 	            setcookie("username", $username, time()+1000, "/");
-	            $mysqli->close();
 	            $outcome = 'NewUserRegistered';
-	            //header("Location:favorites.php");
 
 	    }else{
 	    //if userame is present check password
@@ -40,17 +38,14 @@
 	            $result = $mysqli->query($command);
 
 	            if (mysqli_num_rows($result)==0){
-	            	$mysqli->close();
             		$outcome = 'FailedLogin';
-                    //echo "<script>alert('Incorrect Password')</script>";
 	            }else{
                     setcookie("username", $username, time()+1000, "/");
-                    $mysqli->close();
                     $outcome = 'SuccessfulLogin';
-                    //header("Location:favorites.php");
 	            }
 	    }
-	    //$mysqli->close();
+	    $mysqli->close();
+	    // Return value to AJAX
 	    echo $outcome;
 	}
 ?>

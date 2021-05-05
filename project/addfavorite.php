@@ -19,6 +19,12 @@
 	        if ($mysqli->connect_errno) {
 	        	die('Connect Error: ' . $mysqli->connect_errno . ":" . $mysqli->connect_error);
 	        }
+
+	    $link = $mysqli->real_escape_string($link);
+	    $username = $mysqli->real_escape_string($username);
+	    $title = $mysqli->real_escape_string($title);
+	    $image = $mysqli->real_escape_string($image);
+
 	    // check if location is already in favorites
 	    $command = "SELECT * FROM favorites WHERE username='$username' AND title='$title'";
 	    $result = $mysqli->query($command);
@@ -26,7 +32,14 @@
 	    if (mysqli_num_rows($result)==0){
 	    	$command = "INSERT INTO favorites (username, favorite, title, image) VALUES ('$username', '$link', '$title', '$image')";
 			$result = $mysqli->query($command);
-			$outcome = 'added';
+			
+			if ($result == TRUE) {
+				$outcome = 'added';
+			}
+			else {
+				$outcome = $mysqli->error;
+				//$outcome = 'errorWhileAdd';
+			}
 	    }
 	    // don't add to favorites
 	    else {
