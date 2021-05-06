@@ -4,7 +4,7 @@
 	<title> Search Functionality </title>
 	<meta charset="UTF-8">
 	<meta name="description" content="PHP file for search bar functionality">
-	<meta author="name" content="Kimmi Sin">
+	<meta name="author" content="Kimmi Sin">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href = "starter.css" rel = "stylesheet">
 	<script src="jquery-3.6.0.js"></script>
@@ -23,6 +23,21 @@
 			echo "<script> setNight(); </script>";
 		}else{
 			echo "<script> setDay(); </script>";		
+		}
+	}
+
+	if (isset($_COOKIE["text"])){
+		$value = $_COOKIE["text"];
+		if ($value == "black"){
+			echo "<script> textBlack(); </script>";
+		}else if ($value == "white"){
+			echo "<script> textWhite(); </script>";		
+		}else if ($value == "red"){
+			echo "<script> textRed(); </script>";		
+		}else if ($value == "blue"){
+			echo "<script> textBlue(); </script>";		
+		}else{
+			echo "<script> textOrange(); </script>";		
 		}
 	}
 
@@ -78,7 +93,7 @@
 		<h1> Search Results for $userSearch </h1>	
 		<p id="results"> $userSearch </p>
 page;
-	echo '<script type="text/JavaScript"> 
+	echo '<script> 
 	     	$(document).ready(function(){
 				tags = {
 					"art": ["blanton"], 

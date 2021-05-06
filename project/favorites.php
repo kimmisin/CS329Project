@@ -4,7 +4,7 @@
     <title> Favorites</title>
     <meta charset = "UTF-8">
     <meta name = "description" content = "Favorites">
-    <meta name = "author" content = "Brinnah Welmaker">
+    <meta name = "author" content = "Brinnah Welmaker and Kimmi Sin">
     <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href = "starter.css" rel = "stylesheet">
     <link href = "locationList.css"  rel = "stylesheet">
@@ -130,7 +130,7 @@
 		</div>
         
         <div id = "footer">
-            Brinnah Welmaker | Last Updated: 05/03/2021
+            Brinnah Welmaker | Kimmi Sin | Last Updated: 05/03/2021
         </div>
     </div>
 </body>

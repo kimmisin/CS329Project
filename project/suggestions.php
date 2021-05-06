@@ -191,7 +191,7 @@
 						<label><input name = "interest[]" type = "checkbox" value = "Entertainment"> Entertainment </label>
 						<label><input name = "interest[]" type = "checkbox" value = "Study">Study Spots </label>
 						<label><input name = "interest[]" type = "checkbox" value = "Dining">Dining </label>
-						<lable><input name = "interest[]" type = "checkbox" value = "Sports">Sports </label>
+						<label><input name = "interest[]" type = "checkbox" value = "Sports">Sports </label>
 					</div>
 				</div>
 

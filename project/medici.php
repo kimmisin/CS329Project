@@ -106,7 +106,7 @@ print<<<page
 			<div class = "text">
 				<p> <strong> Location: </strong> <a href = "https://www.google.com/maps/place/Caff%C3%A9+Medici/@30.2855305,-97.8120303,12z/data=!4m8!1m2!2m1!1scafe+medici!3m4!1s0x0:0x744afee519fc2e7a!8m2!3d30.2855305!4d-97.7419925"> 2222 Guadalupe St B, Austin, TX 78705 </a> </p> 
 				<p> </p>
-				<p> <strong> What is it?: </strong> A campus staple, Cafe Medici offers students a convenient location to study close to campus. Day or night, you'll find students hard at work here. </p>
+				<p> <strong> What is it?: </strong> A campus staple, Caffe Medici offers students a convenient location to study close to campus. Day or night, you'll find students hard at work here. </p>
 				<p> </p>
 				<p> <strong> Things to do: </strong> Studying </p>
 				<p> </p>

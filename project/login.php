@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
-	<title> Suggestions Page </title>
+	<title> Login/Registration Page </title>
 	<meta charset = "UTF-8">
 	<meta name = "description" content = "UT Austin Guide">
 	<meta name = "author" content = "Brinnah Welmaker and Kimmi Sin">

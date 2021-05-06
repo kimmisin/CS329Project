@@ -109,9 +109,9 @@ print<<<page
 			</div>
 
 			<div class = "activity">
-				<img src = "https://lh5.googleusercontent.com/p/AF1QipO_A5AA38w2SuYLnBylxULlDQYy6lHXFAaEGCyp" alt = "Cafe Medici">
+				<img src = "https://lh5.googleusercontent.com/p/AF1QipO_A5AA38w2SuYLnBylxULlDQYy6lHXFAaEGCyp" alt = "Caffe Medici">
 				<div class = "text">
-					<h3> Caffee Medici </h3>
+					<h3> Caffe Medici </h3>
 					<p> Popular coffee shop located next to UT on Guadaulpe </p>
 					<p> <strong> Tags: </strong> Study Spots, Coffee </p>
 					<a class = "readmore" href = "medici.php"> Read More! </a>

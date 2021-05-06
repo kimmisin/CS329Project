@@ -11,7 +11,7 @@
 	<script src="searchBar.js"></script>
 	<script src = "location.js" defer> </script>
 	<script src = "colors.js"></script>
-	<script src = "eventheodds.js"></script>\
+	<script src = "eventheodds.js"></script>
 	<script src = "jquery-3.6.0.js"></script>
 	<script src = "addfavorite.js"></script>
 </head>
@@ -88,9 +88,8 @@
 			echo "<script> textOrange(); </script>";		
 		}
 	}
+?>
 
-
-print<<<page
 			<h1> Mayfield Park and Nature Preserve </h1>
 			<div class = "bigPic">
 				<img src = "mayfield1.jpg" id = "big" alt="Image of Mayfield Park" height = "400" width = "700">
@@ -131,5 +130,3 @@ print<<<page
 
 </body>
 </html>
-page;
-?>

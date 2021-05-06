@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
-	<title> Project Homepage </title>
+	<title> Page Customization </title>
 	<meta charset = "UTF-8">
 	<meta name = "description" content = "UT Austin Guide">
-	<meta name = "author" content = "Braden Wu, Brinnah Welmaker">
+	<meta name = "author" content = "Braden Wu and Kimmi Sin">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href = "starter.css" rel = "stylesheet">
 	<link href = "colors.css" rel = "stylesheet">
