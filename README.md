@@ -15,7 +15,9 @@ Maintain state in transactions \
 Set and read cookies \
 Annotated links to other related web sites \
 Include AJAX application \
-Include audio and / or video files \
-Usernames and passwords stored in an SQL database, not in a plain ASCII file. \
-Passwords are not passed in the URL (as with a GET request) where users could see them. \
-Used real_escape_string() as appropriate to prevent SQL injection. \
+Include audio and/or video files \
+Usernames and passwords stored in an SQL database, not in a plain ASCII file \
+Passwords are not passed in the URL (as with a GET request) where users could see them \
+Used real_escape_string() as appropriate to prevent SQL injection
+
+Note: a new server is required to display the site as graduated students from UT Austin no longer have access to the UT servers that the website was originally created on
